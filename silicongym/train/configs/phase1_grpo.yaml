@@ -1,0 +1,49 @@
+# Phase 1: single-turn GRPO on one 16 GB T4. Every value here is logged to runs/<run>/config.json.
+run_name: phase1_grpo
+
+model:
+  base: Qwen/Qwen2.5-Coder-1.5B
+  init_adapters: []          # SiliconLM chain, e.g. [<hub>/siliconlm-dapt, <hub>/siliconlm-sft, <hub>/siliconlm-dpo]
+  load_4bit: true
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+
+data:
+  train: silicongym/data/tasks/train.jsonl
+
+env:
+  max_turns: 1               # single-turn: the completion is the submission
+
+reward:
+  variant: shaped            # shaped | naive
+  compile_bonus: 0.1
+  partial_weight: 0.8
+  all_pass_bonus: 0.1
+  length_threshold: 400
+  length_penalty: 0.0005
+  length_penalty_cap: 0.2
+
+reward_workers: 4
+
+wandb:
+  enabled: true
+  project: silicongym
+
+grpo:
+  num_generations: 4         # group size
+  per_device_train_batch_size: 4      # completions per device step; must be a multiple of num_generations
+  gradient_accumulation_steps: 4      # => 16 completions = 4 prompts per optimizer step
+  max_prompt_length: 384
+  max_completion_length: 384
+  temperature: 0.8
+  learning_rate: 5.0e-6
+  beta: 0.04                 # KL coefficient to the reference policy
+  max_steps: 200
+  warmup_ratio: 0.05
+  logging_steps: 5
+  save_steps: 50
+  save_total_limit: 2
+  use_vllm: false            # HF generate by default; see README for trying vLLM colocate on a T4
