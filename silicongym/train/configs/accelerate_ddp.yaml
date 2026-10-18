@@ -1,0 +1,13 @@
+# Kaggle 2xT4 data-parallel run: accelerate launch --config_file silicongym/train/configs/accelerate_ddp.yaml -m silicongym.train.grpo ...
+compute_environment: LOCAL_MACHINE
+distributed_type: MULTI_GPU
+mixed_precision: fp16
+num_machines: 1
+num_processes: 2
+machine_rank: 0
+gpu_ids: all
+rdzv_backend: static
+same_network: true
+use_cpu: false
+downcast_bf16: "no"
+main_training_function: main
