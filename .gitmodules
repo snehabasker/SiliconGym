@@ -1,0 +1,3 @@
+[submodule "third_party/SiliconLM"]
+	path = third_party/SiliconLM
+	url = https://github.com/snehabasker/SiliconLM.git
