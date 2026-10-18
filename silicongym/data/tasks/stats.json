@@ -1,0 +1,36 @@
+{
+  "validated": true,
+  "invalid": {},
+  "cross_split_dropped": {},
+  "train": {
+    "tasks": 58,
+    "families": [
+      "adder",
+      "comparator",
+      "counter",
+      "decoder",
+      "dff",
+      "mux2",
+      "mux4",
+      "parity",
+      "prienc",
+      "shiftreg"
+    ]
+  },
+  "val": {
+    "tasks": 14,
+    "families": [
+      "edge",
+      "gray"
+    ]
+  },
+  "test": {
+    "tasks": 24,
+    "families": [
+      "barrel",
+      "popcount",
+      "satadd",
+      "updown"
+    ]
+  }
+}
