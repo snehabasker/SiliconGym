@@ -1,0 +1,29 @@
+# Phase 3b: multi-turn GRPO optimising the LEARNED reward model. The simulator still runs and logs ground truth.
+# Train the RM first: python -m silicongym.rewards.learned_rm make-pairs ... && ... train --out runs/rm
+run_name: phase3_rm
+
+model: {base: Qwen/Qwen2.5-Coder-1.5B, init_adapters: [], load_4bit: true}
+lora: {r: 16, alpha: 32, dropout: 0.05}
+data: {train: silicongym/data/tasks/train.jsonl}
+env: {max_turns: 4, timeout: 10}
+
+reward:
+  source: learned_rm
+  rm_path: runs/rm
+  rm_base: Qwen/Qwen2.5-Coder-1.5B
+  # logging-only simulator scoring (identical to the verifiable run, so hack flags are comparable)
+  variant: shaped
+  safeguards: [signed_output, ban_sim_control, multi_seed, hack_penalty]
+
+wandb: {enabled: true, project: silicongym}
+
+grpo:
+  num_generations: 4
+  prompts_per_step: 4
+  max_completion_length: 384
+  temperature: 0.8
+  learning_rate: 5.0e-6
+  beta: 0.04
+  max_steps: 200
+  micro_batch: 4
+  save_steps: 50

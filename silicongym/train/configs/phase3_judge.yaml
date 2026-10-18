@@ -1,0 +1,32 @@
+# Phase 3c: multi-turn GRPO optimising an LLM judge. Needs the API key named in judge.api_key_env.
+# Free-tier rate limits apply (min_interval_s); expect ~16 judge calls per optimizer step.
+run_name: phase3_judge
+
+model: {base: Qwen/Qwen2.5-Coder-1.5B, init_adapters: [], load_4bit: true}
+lora: {r: 16, alpha: 32, dropout: 0.05}
+data: {train: silicongym/data/tasks/train.jsonl}
+env: {max_turns: 4, timeout: 10}
+
+reward:
+  source: ai_judge
+  judge:
+    backend: openai_compat
+    base_url: https://api.groq.com/openai/v1
+    model: llama-3.3-70b-versatile
+    api_key_env: GROQ_API_KEY
+    min_interval_s: 2.0
+  variant: shaped
+  safeguards: [signed_output, ban_sim_control, multi_seed, hack_penalty]
+
+wandb: {enabled: true, project: silicongym}
+
+grpo:
+  num_generations: 4
+  prompts_per_step: 4
+  max_completion_length: 384
+  temperature: 0.8
+  learning_rate: 5.0e-6
+  beta: 0.04
+  max_steps: 200
+  micro_batch: 4
+  save_steps: 50
