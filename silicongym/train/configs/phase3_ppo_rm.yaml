@@ -1,0 +1,32 @@
+# Phase 3d: PPO with the learned reward model, for comparison against phase3_rm (GRPO, same reward signal).
+run_name: phase3_ppo_rm
+
+model: {base: Qwen/Qwen2.5-Coder-1.5B, init_adapters: [], load_4bit: true}
+lora: {r: 16, alpha: 32, dropout: 0.05}
+data: {train: silicongym/data/tasks/train.jsonl}
+env: {max_turns: 4, timeout: 10}
+
+reward:
+  source: learned_rm
+  rm_path: runs/rm
+  rm_base: Qwen/Qwen2.5-Coder-1.5B
+  variant: shaped
+  safeguards: [signed_output, ban_sim_control, multi_seed, hack_penalty]
+
+wandb: {enabled: true, project: silicongym}
+
+ppo:
+  prompts_per_step: 16       # one episode per prompt (PPO needs no groups)
+  max_completion_length: 384
+  temperature: 0.8
+  learning_rate: 5.0e-6
+  value_lr: 1.0e-4
+  kl_coef: 0.04
+  clip: 0.2
+  vf_coef: 0.1
+  gamma: 1.0
+  lam: 0.95
+  ppo_epochs: 2
+  max_steps: 200
+  micro_batch: 4
+  save_steps: 50

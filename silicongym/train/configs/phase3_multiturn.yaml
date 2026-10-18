@@ -1,0 +1,29 @@
+# Phase 3a: multi-turn (up to 4 turns, compile/simulate/lint tools) GRPO with the hardened verifiable reward.
+# Uses the custom loop (train/grpo_mt.py); TRL's GRPOTrainer cannot run an environment between turns.
+run_name: phase3_multiturn
+
+model: {base: Qwen/Qwen2.5-Coder-1.5B, init_adapters: [], load_4bit: true}
+lora: {r: 16, alpha: 32, dropout: 0.05}
+data: {train: silicongym/data/tasks/train.jsonl}
+env: {max_turns: 4, timeout: 10}
+
+reward:
+  source: verifiable         # verifiable | learned_rm | ai_judge
+  variant: shaped
+  compile_bonus: 0.1
+  partial_weight: 0.8
+  all_pass_bonus: 0.1
+  safeguards: [signed_output, ban_sim_control, multi_seed, hack_penalty]
+
+wandb: {enabled: true, project: silicongym}
+
+grpo:
+  num_generations: 4
+  prompts_per_step: 4        # 16 episodes per optimizer step
+  max_completion_length: 384
+  temperature: 0.8
+  learning_rate: 5.0e-6
+  beta: 0.04
+  max_steps: 200
+  micro_batch: 4
+  save_steps: 50
