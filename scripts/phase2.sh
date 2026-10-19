@@ -8,11 +8,11 @@ STRICT="--reward shaped --safeguards signed_output ban_sim_control multi_seed ha
 EVAL="python -m silicongym.eval.evaluate --split test --n-samples 8 $STRICT"
 
 for s in $SEEDS; do
-  python -m silicongym.train.grpo --config silicongym/train/configs/phase2_naive.yaml --seed "$s" ${NO_WANDB:+--no-wandb}
-  python -m silicongym.train.grpo --config silicongym/train/configs/phase2_fixed.yaml --seed "$s" ${NO_WANDB:+--no-wandb}
-  $EVAL --name naive_grpo --seed "$s" --adapter "runs/phase2_naive_seed$s/final"
-  $EVAL --name fixed_grpo --seed "$s" --adapter "runs/phase2_fixed_seed$s/final"
-  $EVAL --name base       --seed "$s" --kl-base none        # same strict scorer for the base model
+  bash scripts/timed.sh "train_naive_s$s" python -m silicongym.train.grpo --config silicongym/train/configs/phase2_naive.yaml --seed "$s" ${NO_WANDB:+--no-wandb}
+  bash scripts/timed.sh "train_fixed_s$s" python -m silicongym.train.grpo --config silicongym/train/configs/phase2_fixed.yaml --seed "$s" ${NO_WANDB:+--no-wandb}
+  bash scripts/timed.sh "eval_naive_s$s" $EVAL --name naive_grpo --seed "$s" --adapter "runs/phase2_naive_seed$s/final"
+  bash scripts/timed.sh "eval_fixed_s$s" $EVAL --name fixed_grpo --seed "$s" --adapter "runs/phase2_fixed_seed$s/final"
+  bash scripts/timed.sh "eval_base_strict_s$s" $EVAL --name base       --seed "$s" --kl-base none        # same strict scorer for the base model
 done
 
 # examples of each hack type found during training and evaluation + the labelled trajectory dataset

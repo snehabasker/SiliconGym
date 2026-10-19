@@ -11,15 +11,15 @@ EVAL="python -m silicongym.eval.evaluate --split test --n-samples 8 $STRICT"
 python -m silicongym.eval.evaluate --name rmdata --split train --n-samples 8 --seed 100 $STRICT --kl-base none
 python -m silicongym.rewards.learned_rm make-pairs --samples runs/eval/rmdata_train_seed100.samples.jsonl \
   runs/phase1_grpo_seed0/samples.jsonl --out runs/rm_pairs.jsonl
-python -m silicongym.rewards.learned_rm train --pairs runs/rm_pairs.jsonl --out runs/rm --seed 0
+bash scripts/timed.sh "train_reward_model" python -m silicongym.rewards.learned_rm train --pairs runs/rm_pairs.jsonl --out runs/rm --seed 0
 
 for s in $SEEDS; do
   for cfg in phase3_multiturn phase3_rm phase3_judge; do
-    python -m silicongym.train.grpo_mt --config "silicongym/train/configs/$cfg.yaml" --seed "$s" ${NO_WANDB:+--no-wandb}
-    $EVAL --name "$cfg" --seed "$s" --adapter "runs/${cfg}_seed$s/final"
+    bash scripts/timed.sh "train_${cfg}_s$s" python -m silicongym.train.grpo_mt --config "silicongym/train/configs/$cfg.yaml" --seed "$s" ${NO_WANDB:+--no-wandb}
+    bash scripts/timed.sh "eval_${cfg}_s$s" $EVAL --name "$cfg" --seed "$s" --adapter "runs/${cfg}_seed$s/final"
   done
-  python -m silicongym.train.ppo --config silicongym/train/configs/phase3_ppo_rm.yaml --seed "$s" ${NO_WANDB:+--no-wandb}
-  $EVAL --name phase3_ppo_rm --seed "$s" --adapter "runs/phase3_ppo_rm_seed$s/final"
+  bash scripts/timed.sh "train_ppo_rm_s$s" python -m silicongym.train.ppo --config silicongym/train/configs/phase3_ppo_rm.yaml --seed "$s" ${NO_WANDB:+--no-wandb}
+  bash scripts/timed.sh "eval_ppo_rm_s$s" $EVAL --name phase3_ppo_rm --seed "$s" --adapter "runs/phase3_ppo_rm_seed$s/final"
 done
 
 # 2. agreement of each reward with simulator ground truth on held-out (test) samples of the trained policies
