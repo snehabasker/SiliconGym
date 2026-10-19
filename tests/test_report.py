@@ -49,3 +49,13 @@ def test_agreement_and_regression_tables(tmp_path):
     (tmp_path / "r.json").write_text(json.dumps({"name": "g", "model": {"pass@1": 0.5}, "base": {"pass@1": 0.55},
                                                  "delta_pass@1": -0.05}))
     assert "| g | 0.500 | 0.550 | -0.050 |" in R.regression_md(tmp_path)
+
+
+def test_gpu_hours_table_and_total(tmp_path):
+    p = tmp_path / "t.jsonl"
+    rows = [{"stage": "train_grpo_s0", "seconds": 3600, "gpu_hours": 1.0, "gpu": "Tesla T4", "exit_code": 0},
+            {"stage": "eval_s0", "seconds": 1800, "gpu_hours": 0.5, "gpu": None, "exit_code": 0}]
+    p.write_text("".join(json.dumps(r) + "\n" for r in rows))
+    md = R.gpu_hours_md(p)
+    assert "| train_grpo_s0 | 60.0 | 1.000 | Tesla T4 | 0 |" in md and "| **total** | 90.0 | 1.500 |" in md
+    assert "no data found" in R.gpu_hours_md(tmp_path / "missing.jsonl")

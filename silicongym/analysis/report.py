@@ -114,3 +114,16 @@ def regression_md(reg_dir: str | Path = "runs/regression") -> str:
         delta_s = "n/a" if base is None else "{:+.3f}".format(r["delta_pass@1"])
         lines.append(f"| {r['name']} | {r['model']['pass@1']:.3f} | {base_s} | {delta_s} |")
     return "\n".join(lines)
+
+
+def gpu_hours_md(path: str | Path = "runs/stage_times.jsonl") -> str:
+    """GPU-hours per stage from measured wall-clock (scripts/timed.sh); gpu_hours = wall hours x GPUs used."""
+    p = Path(path)
+    if not p.exists():
+        return NONE.format(path=path)
+    rows = [json.loads(line) for line in p.read_text().splitlines() if line.strip()]
+    lines = ["| stage | wall time (min) | GPU-hours | GPU | exit |", "|---|---|---|---|---|"]
+    for r in rows:
+        lines.append(f"| {r['stage']} | {r['seconds'] / 60:.1f} | {r['gpu_hours']:.3f} | {r['gpu'] or 'n/a'} | {r['exit_code']} |")
+    lines.append(f"| **total** | {sum(r['seconds'] for r in rows) / 60:.1f} | {sum(r['gpu_hours'] for r in rows):.3f} | | |")
+    return "\n".join(lines)
