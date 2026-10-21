@@ -8,9 +8,23 @@ solving the task.
 
 Zero-budget design: free Kaggle/Colab T4s, 4-bit base + LoRA r=16, HF `generate` rollouts.
 
-**No result numbers appear in this README.** Every number comes from a logged run: `runs/eval/*.json`,
-`runs/agreement.json`, `runs/regression/*.json`. Generate tables with `silicongym.eval.tables` or
-`silicongym/analysis/report.ipynb`.
+## Results
+
+### Phase 1: GRPO on a free Kaggle T4
+
+Held-out test split: 24 tasks from 4 design families never seen in training, 8 samples per task, scored by the strict simulator.
+
+| model | seeds | pass@1 | pass@8 | compile | reward | hack rate | KL/token |
+|---|---|---|---|---|---|---|---|
+| base | 1 | 0.042 | 0.250 | 0.271 | 0.087 | 0.042 | n/a |
+| grpo | 1 | 0.141 | 0.583 | 0.703 | 0.261 | 0.031 | 0.010 |
+
+- Cost: 3.5 GPU-hours of training and 0.4 GPU-hours of evaluation on one Tesla T4.
+- Hack flags on the GRPO samples: 6 of 192, all `trivial_module`.
+- One seed so far; seeds 1 and 2 are in progress. With 24 tasks, expect wide error bars.
+- Raw outputs: [`results/phase1/seed0/`](results/phase1/seed0/). Run log: [Kaggle notebook](https://www.kaggle.com/code/snehabasker/silicongym1).
+
+Every number in this README comes from a logged run (`runs/eval/*.json`, copied to `results/`). Regenerate tables with `silicongym.eval.tables` or `silicongym/analysis/report.ipynb`.
 
 ## What has and has not been verified
 
