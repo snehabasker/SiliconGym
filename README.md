@@ -32,7 +32,7 @@ The code for all four phases is written. It was developed on a Windows CPU-only 
 
 | Verified here (automated tests) | Not yet run, needs a GPU / credentials / Linux |
 |---|---|
-| tools, sandbox, per-test simulation, rewards, detectors, env (single + multi-turn), task builder + validation + dedup, evaluator (mock generators), aggregation, tables, agreement stats, regression harness, report helpers, ablation configs | **No training run has been done and no results exist.** |
+| tools, sandbox, per-test simulation, rewards, detectors, env (single + multi-turn), task builder + validation + dedup, evaluator (mock generators), aggregation, tables, agreement stats, regression harness, report helpers, ablation configs | **Phase 1 has now run end to end on a Kaggle T4 (GRPO training plus evaluation; results above). Phases 2–4 have not yet been run on a GPU..** |
 | the TRL entrypoint `train/grpo.py` (TRL 1.16), the custom GRPO and PPO loops, reward-model training/scoring, HF evaluation with KL-to-base, HumanEval harness: all run for real on a tiny random Qwen2 on CPU (`tests/test_train_smoke.py`) | 4-bit/bitsandbytes loading, fp16 on a T4, T4 memory fit, vLLM, Unsloth |
 | | `accelerate` DDP on 2xT4, AI-judge API calls, Verilator lint, Linux rlimits / `unshare`, Hub push |
 
