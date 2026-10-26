@@ -1,0 +1,21 @@
+
+10. Printing statistics.
+
+=== dff_async_hi ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+        8        - wires
+       14        - wire bits
+        4        - public wires
+       10        - public wire bits
+        4        - ports
+       10        - port bits
+        8   115.11 cells
+        4  100.096   sky130_fd_sc_hd__dfrtp_1
+        4   15.014   sky130_fd_sc_hd__inv_1
+
+   Chip area for module '\dff_async_hi': 115.110400
+     of which used for sequential elements: 100.096000 (86.96%)
+

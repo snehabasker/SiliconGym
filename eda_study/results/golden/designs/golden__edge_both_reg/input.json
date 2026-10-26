@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__edge_both_reg",
+ "task_id": "edge_both_reg",
+ "family": "edge",
+ "split": "val",
+ "kind": "golden",
+ "top": "edge_both_reg",
+ "is_seq": true,
+ "clk_port": "clk"
+}

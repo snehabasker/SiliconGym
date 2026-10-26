@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__popcount_w3",
+ "task_id": "popcount_w3",
+ "family": "popcount",
+ "split": "test",
+ "kind": "golden",
+ "top": "popcount_w3",
+ "is_seq": false,
+ "clk_port": "clk"
+}

@@ -1,0 +1,33 @@
+
+10. Printing statistics.
+
+=== comparator_w6 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       24        - wires
+       34        - wire bits
+        5        - public wires
+       15        - public wire bits
+        5        - ports
+       15        - port bits
+       22  137.632 cells
+        1    7.507   sky130_fd_sc_hd__a21o_1
+        1    5.005   sky130_fd_sc_hd__a21oi_1
+        2   17.517   sky130_fd_sc_hd__a221oi_1
+        1    8.758   sky130_fd_sc_hd__a22o_1
+        1    7.507   sky130_fd_sc_hd__a22oi_1
+        7   26.275   sky130_fd_sc_hd__inv_1
+        1    6.256   sky130_fd_sc_hd__nand2b_1
+        1    6.256   sky130_fd_sc_hd__nand4_1
+        2   12.512   sky130_fd_sc_hd__nor2b_1
+        1    7.507   sky130_fd_sc_hd__nor3b_1
+        1    6.256   sky130_fd_sc_hd__o22ai_1
+        1    8.758   sky130_fd_sc_hd__o2bb2ai_1
+        1    8.758   sky130_fd_sc_hd__or3b_1
+        1    8.758   sky130_fd_sc_hd__xnor2_1
+
+   Chip area for module '\comparator_w6': 137.632000
+     of which used for sequential elements: 0.000000 (0.00%)
+

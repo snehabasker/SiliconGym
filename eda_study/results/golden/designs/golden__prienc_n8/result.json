@@ -1,0 +1,30 @@
+{
+ "design_id": "golden__prienc_n8",
+ "task_id": "prienc_n8",
+ "kind": "golden",
+ "top": "prienc_n8",
+ "is_seq": false,
+ "status": "ok",
+ "cells": 12,
+ "area_um2": 58.8064,
+ "cell_types": {
+  "sky130_fd_sc_hd__a21oi_1": 1,
+  "sky130_fd_sc_hd__inv_1": 1,
+  "sky130_fd_sc_hd__nand2_1": 1,
+  "sky130_fd_sc_hd__nand2b_1": 1,
+  "sky130_fd_sc_hd__nand4_1": 1,
+  "sky130_fd_sc_hd__nor2_1": 5,
+  "sky130_fd_sc_hd__o21bai_1": 1,
+  "sky130_fd_sc_hd__o31ai_1": 1
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 59.0,
+ "worst_slack_ns": 4.6,
+ "data_arrival_ns": 0.396,
+ "period_ns": 5.0,
+ "power_internal_w": 1.55e-06,
+ "power_switching_w": 1.32e-06,
+ "power_leakage_w": 2.63e-11,
+ "power_total_w": 2.87e-06,
+ "seconds": 1.48
+}

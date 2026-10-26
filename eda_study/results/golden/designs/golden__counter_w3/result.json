@@ -1,0 +1,28 @@
+{
+ "design_id": "golden__counter_w3",
+ "task_id": "counter_w3",
+ "kind": "golden",
+ "top": "counter_w3",
+ "is_seq": true,
+ "status": "ok",
+ "cells": 10,
+ "area_um2": 105.1008,
+ "cell_types": {
+  "sky130_fd_sc_hd__a21oi_1": 2,
+  "sky130_fd_sc_hd__a41oi_1": 1,
+  "sky130_fd_sc_hd__and3_1": 1,
+  "sky130_fd_sc_hd__dfxtp_1": 3,
+  "sky130_fd_sc_hd__nor3_1": 1,
+  "sky130_fd_sc_hd__o21a_1": 2
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 180.0,
+ "worst_slack_ns": 4.23,
+ "data_arrival_ns": 0.872,
+ "period_ns": 5.0,
+ "power_internal_w": 0.00013,
+ "power_switching_w": 1.87e-05,
+ "power_leakage_w": 7.79e-11,
+ "power_total_w": 0.000149,
+ "seconds": 25.99
+}

@@ -1,0 +1,145 @@
+$ /home/sneha_basker/eda/mamba/envs/orlh/bin/openroad -no_init -exit pnr.tcl
+OpenROAD f12e2f474102bfb875eeee57fb610d7d7de17770 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+[INFO ODB-0223]     Created 14 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0226] Finished LEF file:  /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+[INFO ODB-0222] Reading LEF file: /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0225]     Created 437 library cells
+[INFO ODB-0226] Finished LEF file:  /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.300, 2.720).
+[INFO IFP-0001] Added 7 rows of 42 sites.
+Found 0 macro blocks.
+Using 1u default distance from corners.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0007] Random pin placement.
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 2300 2720
+[INFO GPL-0005] CoreAreaUxUy: 21620 21760
+[INFO GPL-0006] NumInstances: 3
+[INFO GPL-0007] NumPlaceInstances: 3
+[INFO GPL-0008] NumFixedInstances: 0
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 6
+[INFO GPL-0011] NumPins: 13
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 24000 24000
+[INFO GPL-0014] CoreAreaLxLy: 2300 2720
+[INFO GPL-0015] CoreAreaUxUy: 21620 21760
+[INFO GPL-0016] CoreArea: 367852800
+[INFO GPL-0017] NonPlaceInstsArea: 0
+[INFO GPL-0018] PlaceInstsArea: 32531200
+[INFO GPL-0019] Util(%): 8.84
+[INFO GPL-0020] StdInstsArea: 32531200
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG residual: 0.00000000 HPWL: 127860
+[InitialPlace]  Iter: 2 CG residual: 0.00000000 HPWL: 120735
+[InitialPlace]  Iter: 3 CG residual: 0.00000001 HPWL: 119930
+[InitialPlace]  Iter: 4 CG residual: 0.00000001 HPWL: 120997
+[InitialPlace]  Iter: 5 CG residual: 0.00000004 HPWL: 121395
+[INFO GPL-0031] FillerInit: NumGCells: 27
+[INFO GPL-0032] FillerInit: NumGNets: 6
+[INFO GPL-0033] FillerInit: NumGPins: 13
+[INFO GPL-0023] TargetDensity: 0.50
+[INFO GPL-0024] AveragePlaceInstArea: 10843733
+[INFO GPL-0025] IdealBinArea: 21687466
+[INFO GPL-0026] IdealBinCnt: 16
+[INFO GPL-0027] TotalBinArea: 367852800
+[INFO GPL-0028] BinCnt: 4 4
+[INFO GPL-0029] BinSize: 4830 4760
+[INFO GPL-0030] NumBins: 16
+[NesterovSolve] Iter: 1 overflow: 0 HPWL: 88587
+[NesterovSolve] Finished with Overflow: 0.000000
+[INFO RSZ-0058] Using max wire length 3176um.
+[WARNING DPL-0011] Could not find power special net.
+Placement Analysis
+---------------------------------
+total displacement          2.8 u
+average displacement        0.9 u
+max displacement            1.1 u
+original HPWL              88.9 u
+legalized HPWL             88.3 u
+delta HPWL                   -1 %
+
+[INFO CTS-0038] Number of created patterns = 50000.
+[INFO CTS-0038] Number of created patterns = 100000.
+[INFO CTS-0039] Number of created patterns = 137808.
+[INFO CTS-0084] Compiling LUT.
+Min. len    Max. len    Min. cap    Max. cap    Min. slew   Max. slew
+2           8           1           35          1           47          
+[WARNING CTS-0043] 4752 wires are pure wire and no slew degradation.
+TritonCTS forced slew degradation on these wires.
+[INFO CTS-0046]     Number of wire segments: 137808.
+[INFO CTS-0047]     Number of keys in characterization LUT: 1762.
+[INFO CTS-0048]     Actual min input cap: 1.
+[INFO CTS-0007] Net "clk" found for clock "clk".
+[WARNING CTS-0041] Net "clk" has 1 sinks. Skipping...
+[WARNING CTS-0083] No clock nets have been found.
+[INFO CTS-0008] TritonCTS found 0 clock nets.
+[WARNING CTS-0082] No valid clock nets in the design.
+[WARNING DPL-0011] Could not find power special net.
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL              88.3 u
+legalized HPWL             88.3 u
+delta HPWL                    0 %
+
+=== REPORT_START
+--- design_area
+Design area 33 u^2 9% utilization.
+--- cell_type_report
+--- worst_slack_max
+worst slack 4.62
+--- worst_slack_min
+worst slack 0.02
+--- tns
+tns 0.00
+--- critical_path
+Startpoint: _3_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: pulse (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+     Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------
+                     0.000    0.000   clock clk (rise edge)
+                     0.000    0.000   clock network delay (propagated)
+            0.000    0.000    0.000 ^ _3_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.001    0.022    0.268    0.268 v _3_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.002    0.028    0.109    0.376 v _1_/Y (sky130_fd_sc_hd__nor2b_1)
+            0.028    0.000    0.376 v pulse (out)
+                              0.376   data arrival time
+
+                     5.000    5.000   clock clk (rise edge)
+                     0.000    5.000   clock network delay (propagated)
+                     0.000    5.000   clock reconvergence pessimism
+                     0.000    5.000   output external delay
+                              5.000   data required time
+---------------------------------------------------------------------------
+                              5.000   data required time
+                             -0.376   data arrival time
+---------------------------------------------------------------------------
+                              4.624   slack (MET)
+
+
+--- power
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power
+----------------------------------------------------------------
+Sequential             8.57e-06   5.17e-08   8.44e-12   8.62e-06  94.4%
+Combinational          3.90e-07   1.21e-07   4.36e-12   5.11e-07   5.6%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  8.96e-06   1.73e-07   1.28e-11   9.13e-06 100.0%
+                          98.1%       1.9%       0.0%
+=== REPORT_END

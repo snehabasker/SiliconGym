@@ -1,0 +1,21 @@
+
+10. Printing statistics.
+
+=== shiftreg_w5 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+        9        - wires
+       13        - wire bits
+        4        - public wires
+        8        - public wire bits
+        4        - ports
+        8        - port bits
+       10  131.376 cells
+        5  100.096   sky130_fd_sc_hd__dfxtp_1
+        5    31.28   sky130_fd_sc_hd__nor2b_1
+
+   Chip area for module '\shiftreg_w5': 131.376000
+     of which used for sequential elements: 100.096000 (76.19%)
+

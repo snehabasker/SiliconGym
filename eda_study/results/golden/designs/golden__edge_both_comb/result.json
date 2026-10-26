@@ -1,0 +1,25 @@
+{
+ "design_id": "golden__edge_both_comb",
+ "task_id": "edge_both_comb",
+ "kind": "golden",
+ "top": "edge_both_comb",
+ "is_seq": true,
+ "status": "ok",
+ "cells": 3,
+ "area_um2": 35.0336,
+ "cell_types": {
+  "sky130_fd_sc_hd__dfxtp_1": 1,
+  "sky130_fd_sc_hd__nor2b_1": 1,
+  "sky130_fd_sc_hd__xor2_1": 1
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 35.0,
+ "worst_slack_ns": 4.58,
+ "data_arrival_ns": 0.421,
+ "period_ns": 5.0,
+ "power_internal_w": 9.05e-06,
+ "power_switching_w": 3.24e-07,
+ "power_leakage_w": 1.49e-11,
+ "power_total_w": 9.37e-06,
+ "seconds": 25.59
+}

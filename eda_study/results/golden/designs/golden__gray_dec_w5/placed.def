@@ -1,0 +1,87 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN gray_dec_w5 ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 24000 24000 ) ;
+ROW ROW_0 unithd 2300 2720 N DO 42 BY 1 STEP 460 0 ;
+ROW ROW_1 unithd 2300 5440 FS DO 42 BY 1 STEP 460 0 ;
+ROW ROW_2 unithd 2300 8160 N DO 42 BY 1 STEP 460 0 ;
+ROW ROW_3 unithd 2300 10880 FS DO 42 BY 1 STEP 460 0 ;
+ROW ROW_4 unithd 2300 13600 N DO 42 BY 1 STEP 460 0 ;
+ROW ROW_5 unithd 2300 16320 FS DO 42 BY 1 STEP 460 0 ;
+ROW ROW_6 unithd 2300 19040 N DO 42 BY 1 STEP 460 0 ;
+TRACKS X 230 DO 52 STEP 460 LAYER li1 ;
+TRACKS Y 170 DO 71 STEP 340 LAYER li1 ;
+TRACKS X 170 DO 71 STEP 340 LAYER met1 ;
+TRACKS Y 170 DO 71 STEP 340 LAYER met1 ;
+TRACKS X 230 DO 52 STEP 460 LAYER met2 ;
+TRACKS Y 230 DO 52 STEP 460 LAYER met2 ;
+TRACKS X 340 DO 35 STEP 680 LAYER met3 ;
+TRACKS Y 340 DO 35 STEP 680 LAYER met3 ;
+TRACKS X 460 DO 26 STEP 920 LAYER met4 ;
+TRACKS Y 460 DO 26 STEP 920 LAYER met4 ;
+TRACKS X 1700 DO 7 STEP 3400 LAYER met5 ;
+TRACKS Y 1700 DO 7 STEP 3400 LAYER met5 ;
+COMPONENTS 5 ;
+    - _0_ sky130_fd_sc_hd__xor2_1 + PLACED ( 7820 10880 ) FS ;
+    - _1_ sky130_fd_sc_hd__xor2_1 + PLACED ( 8280 13600 ) N ;
+    - _2_ sky130_fd_sc_hd__xor2_1 + PLACED ( 11040 10880 ) FS ;
+    - _3_ sky130_fd_sc_hd__xor2_1 + PLACED ( 16560 10880 ) FS ;
+    - _4_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 5980 8160 ) N ;
+END COMPONENTS
+PINS 10 ;
+    - b[0] + NET b[0] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 23230 23757 ) N ;
+    - b[1] + NET b[1] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 230 242 ) N ;
+    - b[2] + NET b[2] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 15870 23757 ) N ;
+    - b[3] + NET b[3] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 15870 242 ) N ;
+    - b[4] + NET b[4] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 400 11220 ) N ;
+    - g[0] + NET g[0] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 23600 12580 ) N ;
+    - g[1] + NET g[1] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 7590 242 ) N ;
+    - g[2] + NET g[2] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 400 23460 ) N ;
+    - g[3] + NET g[3] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 7590 23757 ) N ;
+    - g[4] + NET g[4] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 23600 340 ) N ;
+END PINS
+NETS 10 ;
+    - b[0] ( PIN b[0] ) ( _3_ X ) + USE SIGNAL ;
+    - b[1] ( PIN b[1] ) ( _3_ B ) ( _2_ X ) + USE SIGNAL ;
+    - b[2] ( PIN b[2] ) ( _2_ B ) ( _1_ X ) + USE SIGNAL ;
+    - b[3] ( PIN b[3] ) ( _1_ B ) ( _0_ X ) + USE SIGNAL ;
+    - b[4] ( PIN b[4] ) ( _4_ X ) + USE SIGNAL ;
+    - g[0] ( PIN g[0] ) ( _3_ A ) + USE SIGNAL ;
+    - g[1] ( PIN g[1] ) ( _2_ A ) + USE SIGNAL ;
+    - g[2] ( PIN g[2] ) ( _1_ A ) + USE SIGNAL ;
+    - g[3] ( PIN g[3] ) ( _0_ B ) + USE SIGNAL ;
+    - g[4] ( PIN g[4] ) ( _4_ A ) ( _0_ A ) + USE SIGNAL ;
+END NETS
+END DESIGN

@@ -1,0 +1,20 @@
+
+10. Printing statistics.
+
+=== mux2_w3 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+        4        - wires
+       10        - wire bits
+        4        - public wires
+       10        - public wire bits
+        4        - ports
+       10        - port bits
+        3   33.782 cells
+        3   33.782   sky130_fd_sc_hd__mux2_1
+
+   Chip area for module '\mux2_w3': 33.782400
+     of which used for sequential elements: 0.000000 (0.00%)
+

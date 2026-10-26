@@ -1,0 +1,3 @@
+module barrel_rot_w8(input [7:0] in, input [2:0] shamt, input dir, output [7:0] out);
+  assign out = dir ? ((in >> shamt) | (in << (8 - shamt))) : ((in << shamt) | (in >> (8 - shamt)));
+endmodule

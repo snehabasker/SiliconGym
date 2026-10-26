@@ -1,0 +1,29 @@
+{
+ "design_id": "golden__satadd_w4",
+ "task_id": "satadd_w4",
+ "kind": "golden",
+ "top": "satadd_w4",
+ "is_seq": false,
+ "status": "ok",
+ "cells": 17,
+ "area_um2": 97.5936,
+ "cell_types": {
+  "sky130_fd_sc_hd__a21oi_1": 1,
+  "sky130_fd_sc_hd__a221oi_1": 1,
+  "sky130_fd_sc_hd__and2_1": 1,
+  "sky130_fd_sc_hd__nand2_1": 3,
+  "sky130_fd_sc_hd__nor2_1": 3,
+  "sky130_fd_sc_hd__o21ai_1": 4,
+  "sky130_fd_sc_hd__xnor2_1": 4
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 98.0,
+ "worst_slack_ns": 4.23,
+ "data_arrival_ns": 0.765,
+ "period_ns": 5.0,
+ "power_internal_w": 4.28e-06,
+ "power_switching_w": 3.83e-06,
+ "power_leakage_w": 3e-11,
+ "power_total_w": 8.11e-06,
+ "seconds": 1.1
+}

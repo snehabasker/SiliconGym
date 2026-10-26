@@ -1,0 +1,21 @@
+
+10. Printing statistics.
+
+=== gray_enc_w3 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+        2        - wires
+        6        - wire bits
+        2        - public wires
+        6        - public wire bits
+        2        - ports
+        6        - port bits
+        3   22.522 cells
+        1    5.005   sky130_fd_sc_hd__buf_2
+        2   17.517   sky130_fd_sc_hd__xor2_1
+
+   Chip area for module '\gray_enc_w3': 22.521600
+     of which used for sequential elements: 0.000000 (0.00%)
+

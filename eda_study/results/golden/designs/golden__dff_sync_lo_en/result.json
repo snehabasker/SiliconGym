@@ -1,0 +1,25 @@
+{
+ "design_id": "golden__dff_sync_lo_en",
+ "task_id": "dff_sync_lo_en",
+ "kind": "golden",
+ "top": "dff_sync_lo_en",
+ "is_seq": true,
+ "status": "ok",
+ "cells": 12,
+ "area_um2": 145.1392,
+ "cell_types": {
+  "sky130_fd_sc_hd__dfxtp_1": 4,
+  "sky130_fd_sc_hd__mux2i_1": 4,
+  "sky130_fd_sc_hd__nor2b_1": 4
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 220.0,
+ "worst_slack_ns": 4.43,
+ "data_arrival_ns": 0.679,
+ "period_ns": 5.0,
+ "power_internal_w": 0.000139,
+ "power_switching_w": 1.96e-05,
+ "power_leakage_w": 1.03e-10,
+ "power_total_w": 0.000158,
+ "seconds": 26.19
+}

@@ -1,0 +1,204 @@
+$ /home/sneha_basker/eda/mamba/envs/orlh/bin/openroad -no_init -exit pnr.tcl
+OpenROAD f12e2f474102bfb875eeee57fb610d7d7de17770 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+[INFO ODB-0223]     Created 14 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0226] Finished LEF file:  /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+[INFO ODB-0222] Reading LEF file: /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0225]     Created 437 library cells
+[INFO ODB-0226] Finished LEF file:  /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.300, 2.720).
+[INFO IFP-0001] Added 7 rows of 42 sites.
+Found 0 macro blocks.
+Using 1u default distance from corners.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0007] Random pin placement.
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 2300 2720
+[INFO GPL-0005] CoreAreaUxUy: 21620 21760
+[INFO GPL-0006] NumInstances: 10
+[INFO GPL-0007] NumPlaceInstances: 10
+[INFO GPL-0008] NumFixedInstances: 0
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 13
+[INFO GPL-0011] NumPins: 45
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 24000 24000
+[INFO GPL-0014] CoreAreaLxLy: 2300 2720
+[INFO GPL-0015] CoreAreaUxUy: 21620 21760
+[INFO GPL-0016] CoreArea: 367852800
+[INFO GPL-0017] NonPlaceInstsArea: 0
+[INFO GPL-0018] PlaceInstsArea: 105100800
+[INFO GPL-0019] Util(%): 28.57
+[INFO GPL-0020] StdInstsArea: 105100800
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG residual: 0.00000001 HPWL: 214860
+[InitialPlace]  Iter: 2 CG residual: 0.00000000 HPWL: 198566
+[InitialPlace]  Iter: 3 CG residual: 0.00000010 HPWL: 198028
+[InitialPlace]  Iter: 4 CG residual: 0.00000002 HPWL: 197997
+[InitialPlace]  Iter: 5 CG residual: 0.00000001 HPWL: 198131
+[INFO GPL-0031] FillerInit: NumGCells: 18
+[INFO GPL-0032] FillerInit: NumGNets: 13
+[INFO GPL-0033] FillerInit: NumGPins: 45
+[INFO GPL-0023] TargetDensity: 0.50
+[INFO GPL-0024] AveragePlaceInstArea: 10510080
+[INFO GPL-0025] IdealBinArea: 21020160
+[INFO GPL-0026] IdealBinCnt: 17
+[INFO GPL-0027] TotalBinArea: 367852800
+[INFO GPL-0028] BinCnt: 4 4
+[INFO GPL-0029] BinSize: 4830 4760
+[INFO GPL-0030] NumBins: 16
+[NesterovSolve] Iter: 1 overflow: 0.415087 HPWL: 131054
+[NesterovSolve] Iter: 10 overflow: 0.459636 HPWL: 132685
+[NesterovSolve] Iter: 20 overflow: 0.458425 HPWL: 132643
+[NesterovSolve] Iter: 30 overflow: 0.46031 HPWL: 132667
+[NesterovSolve] Iter: 40 overflow: 0.45948 HPWL: 132658
+[NesterovSolve] Iter: 50 overflow: 0.459869 HPWL: 132664
+[NesterovSolve] Iter: 60 overflow: 0.459684 HPWL: 132656
+[NesterovSolve] Iter: 70 overflow: 0.459768 HPWL: 132658
+[NesterovSolve] Iter: 80 overflow: 0.459646 HPWL: 132657
+[NesterovSolve] Iter: 90 overflow: 0.459595 HPWL: 132691
+[NesterovSolve] Iter: 100 overflow: 0.459481 HPWL: 132736
+[NesterovSolve] Iter: 110 overflow: 0.459583 HPWL: 132710
+[NesterovSolve] Iter: 120 overflow: 0.459294 HPWL: 132762
+[NesterovSolve] Iter: 130 overflow: 0.458446 HPWL: 132845
+[NesterovSolve] Iter: 140 overflow: 0.45696 HPWL: 132892
+[NesterovSolve] Iter: 150 overflow: 0.45445 HPWL: 132853
+[NesterovSolve] Iter: 160 overflow: 0.452613 HPWL: 132984
+[NesterovSolve] Iter: 170 overflow: 0.449354 HPWL: 133171
+[NesterovSolve] Iter: 180 overflow: 0.445647 HPWL: 133483
+[NesterovSolve] Iter: 190 overflow: 0.438559 HPWL: 134074
+[NesterovSolve] Iter: 200 overflow: 0.426213 HPWL: 134982
+[NesterovSolve] Iter: 210 overflow: 0.407378 HPWL: 136616
+[NesterovSolve] Iter: 220 overflow: 0.378259 HPWL: 138988
+[NesterovSolve] Iter: 230 overflow: 0.33939 HPWL: 141574
+[NesterovSolve] Iter: 240 overflow: 0.300849 HPWL: 143679
+[NesterovSolve] Iter: 250 overflow: 0.252746 HPWL: 146780
+[NesterovSolve] Iter: 260 overflow: 0.198777 HPWL: 148988
+[NesterovSolve] Iter: 270 overflow: 0.145641 HPWL: 150471
+[NesterovSolve] Iter: 280 overflow: 0.108444 HPWL: 152948
+[NesterovSolve] Finished with Overflow: 0.095682
+[INFO RSZ-0058] Using max wire length 3176um.
+[WARNING DPL-0011] Could not find power special net.
+Placement Analysis
+---------------------------------
+total displacement         15.0 u
+average displacement        1.5 u
+max displacement            2.8 u
+original HPWL             153.3 u
+legalized HPWL            164.1 u
+delta HPWL                    7 %
+
+[INFO CTS-0038] Number of created patterns = 50000.
+[INFO CTS-0038] Number of created patterns = 100000.
+[INFO CTS-0039] Number of created patterns = 137808.
+[INFO CTS-0084] Compiling LUT.
+Min. len    Max. len    Min. cap    Max. cap    Min. slew   Max. slew
+2           8           1           35          1           47          
+[WARNING CTS-0043] 4752 wires are pure wire and no slew degradation.
+TritonCTS forced slew degradation on these wires.
+[INFO CTS-0046]     Number of wire segments: 137808.
+[INFO CTS-0047]     Number of keys in characterization LUT: 1762.
+[INFO CTS-0048]     Actual min input cap: 1.
+[INFO CTS-0007] Net "clk" found for clock "clk".
+[INFO CTS-0010]  Clock net "clk" has 3 sinks.
+[INFO CTS-0008] TritonCTS found 1 clock nets.
+[INFO CTS-0097] Characterization used 2 buffer(s) types.
+[INFO CTS-0027] Generating H-Tree topology for net clk.
+[INFO CTS-0028]  Total number of sinks: 3.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 13000  dbu (13 um).
+[INFO CTS-0023]  Original sink region: [(2565, 6860), (7165, 17740)].
+[INFO CTS-0024]  Normalized sink region: [(0.197308, 0.527692), (0.551154, 1.36462)].
+[INFO CTS-0025]     Width:  0.3538.
+[INFO CTS-0026]     Height: 0.8369.
+[WARNING CTS-0045] Creating fake entries in the LUT.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 2
+    Sub-region size: 0.3538 X 0.4185
+[INFO CTS-0034]     Segment length (rounded): 1.
+    Key: 137808 outSlew: 2 load: 1 length: 1 isBuffered: false
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 3.
+[INFO CTS-0036]  Average source sink dist: 13138.33 dbu.
+[INFO CTS-0037]  Number of outlier sinks: 0.
+[INFO CTS-0018]     Created 3 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 3 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 1:1, 2:1..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0098] Clock net "clk"
+[INFO CTS-0099]  Sinks 3
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 37.97 um
+[INFO CTS-0102]  Path depth 2 - 2
+[WARNING DPL-0011] Could not find power special net.
+Placement Analysis
+---------------------------------
+total displacement         26.5 u
+average displacement        2.0 u
+max displacement            5.0 u
+original HPWL             198.0 u
+legalized HPWL            209.2 u
+delta HPWL                    6 %
+
+=== REPORT_START
+--- design_area
+Design area 180 u^2 49% utilization.
+--- cell_type_report
+--- worst_slack_max
+worst slack 4.23
+--- worst_slack_min
+worst slack -0.14
+--- tns
+tns 0.00
+--- critical_path
+Startpoint: _15_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _16_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+     Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------
+                     0.000    0.000   clock clk (rise edge)
+                     0.216    0.216   clock network delay (propagated)
+            0.029    0.000    0.216 ^ _15_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.008    0.050    0.308    0.524 v _15_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.005    0.046    0.187    0.712 v _07_/X (sky130_fd_sc_hd__and3_1)
+   0.002    0.033    0.160    0.872 v _11_/X (sky130_fd_sc_hd__o21a_1)
+            0.033    0.000    0.872 v _16_/D (sky130_fd_sc_hd__dfxtp_1)
+                              0.872   data arrival time
+
+                     5.000    5.000   clock clk (rise edge)
+                     0.213    5.213   clock network delay (propagated)
+                     0.000    5.213   clock reconvergence pessimism
+                              5.213 ^ _16_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                    -0.110    5.104   library setup time
+                              5.104   data required time
+---------------------------------------------------------------------------
+                              5.104   data required time
+                             -0.872   data arrival time
+---------------------------------------------------------------------------
+                              4.232   slack (MET)
+
+
+--- power
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power
+----------------------------------------------------------------
+Sequential             2.64e-05   1.57e-06   2.53e-11   2.80e-05  18.8%
+Combinational          1.04e-04   1.71e-05   5.26e-11   1.21e-04  81.2%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  1.30e-04   1.87e-05   7.79e-11   1.49e-04 100.0%
+                          87.5%      12.5%       0.0%
+=== REPORT_END

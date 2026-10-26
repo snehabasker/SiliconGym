@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__edge_falling_reg",
+ "task_id": "edge_falling_reg",
+ "family": "edge",
+ "split": "val",
+ "kind": "golden",
+ "top": "edge_falling_reg",
+ "is_seq": true,
+ "clk_port": "clk"
+}

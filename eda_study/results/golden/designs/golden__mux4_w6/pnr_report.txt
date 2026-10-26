@@ -1,0 +1,148 @@
+$ /home/sneha_basker/eda/mamba/envs/orlh/bin/openroad -no_init -exit pnr.tcl
+OpenROAD f12e2f474102bfb875eeee57fb610d7d7de17770 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+[INFO ODB-0223]     Created 14 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0226] Finished LEF file:  /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+[INFO ODB-0222] Reading LEF file: /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0225]     Created 437 library cells
+[INFO ODB-0226] Finished LEF file:  /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.300, 2.720).
+[INFO IFP-0001] Added 8 rows of 51 sites.
+Found 0 macro blocks.
+Using 1u default distance from corners.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0007] Random pin placement.
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 2300 2720
+[INFO GPL-0005] CoreAreaUxUy: 25760 24480
+[INFO GPL-0006] NumInstances: 34
+[INFO GPL-0007] NumPlaceInstances: 34
+[INFO GPL-0008] NumFixedInstances: 0
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 60
+[INFO GPL-0011] NumPins: 151
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 27820 27820
+[INFO GPL-0014] CoreAreaLxLy: 2300 2720
+[INFO GPL-0015] CoreAreaUxUy: 25760 24480
+[INFO GPL-0016] CoreArea: 510489600
+[INFO GPL-0017] NonPlaceInstsArea: 0
+[INFO GPL-0018] PlaceInstsArea: 170163200
+[INFO GPL-0019] Util(%): 33.33
+[INFO GPL-0020] StdInstsArea: 170163200
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG residual: 0.00000011 HPWL: 1069290
+[InitialPlace]  Iter: 2 CG residual: 0.00000008 HPWL: 894100
+[InitialPlace]  Iter: 3 CG residual: 0.00000012 HPWL: 889594
+[InitialPlace]  Iter: 4 CG residual: 0.00000011 HPWL: 890887
+[InitialPlace]  Iter: 5 CG residual: 0.00000011 HPWL: 886763
+[INFO GPL-0031] FillerInit: NumGCells: 51
+[INFO GPL-0032] FillerInit: NumGNets: 60
+[INFO GPL-0033] FillerInit: NumGPins: 151
+[INFO GPL-0023] TargetDensity: 0.50
+[INFO GPL-0024] AveragePlaceInstArea: 5004800
+[INFO GPL-0025] IdealBinArea: 10009600
+[INFO GPL-0026] IdealBinCnt: 51
+[INFO GPL-0027] TotalBinArea: 510489600
+[INFO GPL-0028] BinCnt: 4 4
+[INFO GPL-0029] BinSize: 5865 5440
+[INFO GPL-0030] NumBins: 16
+[NesterovSolve] Iter: 1 overflow: 0.192577 HPWL: 708574
+[NesterovSolve] Iter: 10 overflow: 0.166744 HPWL: 681896
+[NesterovSolve] Iter: 20 overflow: 0.173595 HPWL: 683468
+[NesterovSolve] Iter: 30 overflow: 0.172482 HPWL: 683312
+[NesterovSolve] Iter: 40 overflow: 0.172504 HPWL: 683447
+[NesterovSolve] Iter: 50 overflow: 0.17248 HPWL: 683451
+[NesterovSolve] Iter: 60 overflow: 0.172507 HPWL: 683442
+[NesterovSolve] Iter: 70 overflow: 0.172427 HPWL: 683414
+[NesterovSolve] Iter: 80 overflow: 0.172386 HPWL: 683355
+[NesterovSolve] Iter: 90 overflow: 0.172327 HPWL: 683299
+[NesterovSolve] Iter: 100 overflow: 0.172199 HPWL: 683222
+[NesterovSolve] Iter: 110 overflow: 0.172076 HPWL: 683113
+[NesterovSolve] Iter: 120 overflow: 0.171913 HPWL: 683015
+[NesterovSolve] Iter: 130 overflow: 0.171742 HPWL: 682942
+[NesterovSolve] Iter: 140 overflow: 0.171489 HPWL: 682838
+[NesterovSolve] Iter: 150 overflow: 0.171378 HPWL: 682964
+[NesterovSolve] Iter: 160 overflow: 0.171245 HPWL: 682848
+[NesterovSolve] Iter: 170 overflow: 0.170938 HPWL: 683092
+[NesterovSolve] Iter: 180 overflow: 0.170116 HPWL: 682769
+[NesterovSolve] Iter: 190 overflow: 0.168907 HPWL: 682470
+[NesterovSolve] Iter: 200 overflow: 0.167088 HPWL: 682553
+[NesterovSolve] Iter: 210 overflow: 0.164458 HPWL: 682353
+[NesterovSolve] Iter: 220 overflow: 0.160481 HPWL: 681964
+[NesterovSolve] Iter: 230 overflow: 0.154842 HPWL: 681495
+[NesterovSolve] Iter: 240 overflow: 0.14578 HPWL: 680692
+[NesterovSolve] Iter: 250 overflow: 0.132691 HPWL: 679637
+[NesterovSolve] Iter: 260 overflow: 0.115181 HPWL: 678776
+[NesterovSolve] Finished with Overflow: 0.098328
+[INFO RSZ-0058] Using max wire length 3176um.
+[INFO RSZ-0039] Resized 7 instances.
+[WARNING DPL-0011] Could not find power special net.
+Placement Analysis
+---------------------------------
+total displacement         59.3 u
+average displacement        1.7 u
+max displacement            4.1 u
+original HPWL             681.5 u
+legalized HPWL            723.2 u
+delta HPWL                    6 %
+
+=== REPORT_START
+--- design_area
+Design area 180 u^2 35% utilization.
+--- cell_type_report
+--- worst_slack_max
+worst slack 4.54
+--- worst_slack_min
+worst slack 0.08
+--- tns
+tns 0.00
+--- critical_path
+Startpoint: sel[0] (input port clocked by vclk)
+Endpoint: y[2] (output port clocked by vclk)
+Path Group: vclk
+Path Type: max
+
+     Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------
+            0.000    0.000    0.000   clock vclk (rise edge)
+                     0.000    0.000   clock network delay (ideal)
+                     0.000    0.000 v input external delay
+   0.023    0.000    0.000    0.000 v sel[0] (in)
+   0.017    0.258    0.238    0.238 ^ _33_/Y (sky130_fd_sc_hd__xnor2_2)
+   0.003    0.090    0.104    0.342 v _50_/Y (sky130_fd_sc_hd__a22oi_1)
+   0.001    0.066    0.122    0.464 ^ _51_/Y (sky130_fd_sc_hd__a21oi_1)
+            0.066    0.000    0.464 ^ y[2] (out)
+                              0.464   data arrival time
+
+            0.000    5.000    5.000   clock vclk (rise edge)
+                     0.000    5.000   clock network delay (ideal)
+                     0.000    5.000   clock reconvergence pessimism
+                     0.000    5.000   output external delay
+                              5.000   data required time
+---------------------------------------------------------------------------
+                              5.000   data required time
+                             -0.464   data arrival time
+---------------------------------------------------------------------------
+                              4.536   slack (MET)
+
+
+--- power
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          6.48e-06   5.53e-06   7.85e-11   1.20e-05 100.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  6.48e-06   5.53e-06   7.85e-11   1.20e-05 100.0%
+                          54.0%      46.0%       0.0%
+=== REPORT_END

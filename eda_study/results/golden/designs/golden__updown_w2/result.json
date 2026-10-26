@@ -1,0 +1,28 @@
+{
+ "design_id": "golden__updown_w2",
+ "task_id": "updown_w2",
+ "kind": "golden",
+ "top": "updown_w2",
+ "is_seq": true,
+ "status": "ok",
+ "cells": 8,
+ "area_um2": 77.5744,
+ "cell_types": {
+  "sky130_fd_sc_hd__a21oi_1": 1,
+  "sky130_fd_sc_hd__and3_1": 1,
+  "sky130_fd_sc_hd__dfxtp_1": 2,
+  "sky130_fd_sc_hd__nor2_1": 1,
+  "sky130_fd_sc_hd__nor3_1": 1,
+  "sky130_fd_sc_hd__xnor2_1": 2
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 153.0,
+ "worst_slack_ns": 4.14,
+ "data_arrival_ns": 0.993,
+ "period_ns": 5.0,
+ "power_internal_w": 0.00012,
+ "power_switching_w": 1.68e-05,
+ "power_leakage_w": 6.81e-11,
+ "power_total_w": 0.000137,
+ "seconds": 25.75
+}

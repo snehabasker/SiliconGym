@@ -1,0 +1,22 @@
+
+10. Printing statistics.
+
+=== dff_sync_hi_en ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       13        - wires
+       19        - wire bits
+        5        - public wires
+       11        - public wire bits
+        5        - ports
+       11        - port bits
+       12   135.13 cells
+        4   80.077   sky130_fd_sc_hd__dfxtp_1
+        4   40.038   sky130_fd_sc_hd__mux2i_1
+        4   15.014   sky130_fd_sc_hd__nor2_1
+
+   Chip area for module '\dff_sync_hi_en': 135.129600
+     of which used for sequential elements: 80.076800 (59.26%)
+

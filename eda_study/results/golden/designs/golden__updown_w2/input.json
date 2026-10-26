@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__updown_w2",
+ "task_id": "updown_w2",
+ "family": "updown",
+ "split": "test",
+ "kind": "golden",
+ "top": "updown_w2",
+ "is_seq": true,
+ "clk_port": "clk"
+}

@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__mux4_w6",
+ "task_id": "mux4_w6",
+ "family": "mux4",
+ "split": "train",
+ "kind": "golden",
+ "top": "mux4_w6",
+ "is_seq": false,
+ "clk_port": "clk"
+}

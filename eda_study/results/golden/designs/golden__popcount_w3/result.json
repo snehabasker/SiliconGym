@@ -1,0 +1,24 @@
+{
+ "design_id": "golden__popcount_w3",
+ "task_id": "popcount_w3",
+ "kind": "golden",
+ "top": "popcount_w3",
+ "is_seq": false,
+ "status": "ok",
+ "cells": 3,
+ "area_um2": 27.5264,
+ "cell_types": {
+  "sky130_fd_sc_hd__maj3_1": 1,
+  "sky130_fd_sc_hd__xnor2_1": 2
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 28.0,
+ "worst_slack_ns": 4.67,
+ "data_arrival_ns": 0.331,
+ "period_ns": 5.0,
+ "power_internal_w": 1.35e-06,
+ "power_switching_w": 4.88e-07,
+ "power_leakage_w": 6.22e-12,
+ "power_total_w": 1.83e-06,
+ "seconds": 1.01
+}

@@ -1,0 +1,21 @@
+
+10. Printing statistics.
+
+=== barrel_rot_w4 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       12        - wires
+       19        - wire bits
+        4        - public wires
+       11        - public wire bits
+        4        - ports
+       11        - port bits
+       12  225.216 cells
+        4   45.043   sky130_fd_sc_hd__mux2_1
+        8  180.173   sky130_fd_sc_hd__mux4_2
+
+   Chip area for module '\barrel_rot_w4': 225.216000
+     of which used for sequential elements: 0.000000 (0.00%)
+

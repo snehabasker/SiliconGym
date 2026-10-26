@@ -1,0 +1,32 @@
+{
+ "design_id": "golden__popcount_w8",
+ "task_id": "popcount_w8",
+ "kind": "golden",
+ "top": "popcount_w8",
+ "is_seq": false,
+ "status": "ok",
+ "cells": 21,
+ "area_um2": 156.4,
+ "cell_types": {
+  "sky130_fd_sc_hd__inv_1": 1,
+  "sky130_fd_sc_hd__maj3_1": 3,
+  "sky130_fd_sc_hd__nand2_1": 3,
+  "sky130_fd_sc_hd__nor2_1": 1,
+  "sky130_fd_sc_hd__nor3_1": 1,
+  "sky130_fd_sc_hd__nor4_1": 1,
+  "sky130_fd_sc_hd__o21a_1": 1,
+  "sky130_fd_sc_hd__o21ba_1": 1,
+  "sky130_fd_sc_hd__xnor2_1": 7,
+  "sky130_fd_sc_hd__xor2_1": 2
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 164.0,
+ "worst_slack_ns": 3.42,
+ "data_arrival_ns": 1.581,
+ "period_ns": 5.0,
+ "power_internal_w": 1.18e-05,
+ "power_switching_w": 9.88e-06,
+ "power_leakage_w": 5.95e-11,
+ "power_total_w": 2.16e-05,
+ "seconds": 1.05
+}

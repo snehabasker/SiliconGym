@@ -1,0 +1,62 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN parity_w4 ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 24000 24000 ) ;
+ROW ROW_0 unithd 2300 2720 N DO 42 BY 1 STEP 460 0 ;
+ROW ROW_1 unithd 2300 5440 FS DO 42 BY 1 STEP 460 0 ;
+ROW ROW_2 unithd 2300 8160 N DO 42 BY 1 STEP 460 0 ;
+ROW ROW_3 unithd 2300 10880 FS DO 42 BY 1 STEP 460 0 ;
+ROW ROW_4 unithd 2300 13600 N DO 42 BY 1 STEP 460 0 ;
+ROW ROW_5 unithd 2300 16320 FS DO 42 BY 1 STEP 460 0 ;
+ROW ROW_6 unithd 2300 19040 N DO 42 BY 1 STEP 460 0 ;
+TRACKS X 230 DO 52 STEP 460 LAYER li1 ;
+TRACKS Y 170 DO 71 STEP 340 LAYER li1 ;
+TRACKS X 170 DO 71 STEP 340 LAYER met1 ;
+TRACKS Y 170 DO 71 STEP 340 LAYER met1 ;
+TRACKS X 230 DO 52 STEP 460 LAYER met2 ;
+TRACKS Y 230 DO 52 STEP 460 LAYER met2 ;
+TRACKS X 340 DO 35 STEP 680 LAYER met3 ;
+TRACKS Y 340 DO 35 STEP 680 LAYER met3 ;
+TRACKS X 460 DO 26 STEP 920 LAYER met4 ;
+TRACKS Y 460 DO 26 STEP 920 LAYER met4 ;
+TRACKS X 1700 DO 7 STEP 3400 LAYER met5 ;
+TRACKS Y 1700 DO 7 STEP 3400 LAYER met5 ;
+COMPONENTS 3 ;
+    - _2_ sky130_fd_sc_hd__xor2_1 + PLACED ( 14720 10880 ) FS ;
+    - _3_ sky130_fd_sc_hd__xnor2_1 + PLACED ( 4140 10880 ) FS ;
+    - _4_ sky130_fd_sc_hd__xnor2_1 + PLACED ( 11500 10880 ) FS ;
+END COMPONENTS
+PINS 5 ;
+    - in[0] + NET in[0] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 400 23460 ) N ;
+    - in[1] + NET in[1] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 230 242 ) N ;
+    - in[2] + NET in[2] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 23600 12580 ) N ;
+    - in[3] + NET in[3] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 15870 23757 ) N ;
+    - p + NET p + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 15870 242 ) N ;
+END PINS
+NETS 7 ;
+    - _0_ ( _4_ A ) ( _2_ X ) + USE SIGNAL ;
+    - _1_ ( _4_ B ) ( _3_ Y ) + USE SIGNAL ;
+    - in[0] ( PIN in[0] ) ( _3_ A ) + USE SIGNAL ;
+    - in[1] ( PIN in[1] ) ( _3_ B ) + USE SIGNAL ;
+    - in[2] ( PIN in[2] ) ( _2_ A ) + USE SIGNAL ;
+    - in[3] ( PIN in[3] ) ( _2_ B ) + USE SIGNAL ;
+    - p ( PIN p ) ( _4_ Y ) + USE SIGNAL ;
+END NETS
+END DESIGN

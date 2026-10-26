@@ -1,0 +1,93 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN shiftreg_w5 ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 24930 24930 ) ;
+ROW ROW_0 unithd 2300 2720 N DO 44 BY 1 STEP 460 0 ;
+ROW ROW_1 unithd 2300 5440 FS DO 44 BY 1 STEP 460 0 ;
+ROW ROW_2 unithd 2300 8160 N DO 44 BY 1 STEP 460 0 ;
+ROW ROW_3 unithd 2300 10880 FS DO 44 BY 1 STEP 460 0 ;
+ROW ROW_4 unithd 2300 13600 N DO 44 BY 1 STEP 460 0 ;
+ROW ROW_5 unithd 2300 16320 FS DO 44 BY 1 STEP 460 0 ;
+ROW ROW_6 unithd 2300 19040 N DO 44 BY 1 STEP 460 0 ;
+TRACKS X 230 DO 54 STEP 460 LAYER li1 ;
+TRACKS Y 170 DO 73 STEP 340 LAYER li1 ;
+TRACKS X 170 DO 73 STEP 340 LAYER met1 ;
+TRACKS Y 170 DO 73 STEP 340 LAYER met1 ;
+TRACKS X 230 DO 54 STEP 460 LAYER met2 ;
+TRACKS Y 230 DO 54 STEP 460 LAYER met2 ;
+TRACKS X 340 DO 37 STEP 680 LAYER met3 ;
+TRACKS Y 340 DO 37 STEP 680 LAYER met3 ;
+TRACKS X 460 DO 27 STEP 920 LAYER met4 ;
+TRACKS Y 460 DO 27 STEP 920 LAYER met4 ;
+TRACKS X 1700 DO 7 STEP 3400 LAYER met5 ;
+TRACKS Y 1700 DO 7 STEP 3400 LAYER met5 ;
+COMPONENTS 13 ;
+    - _05_ sky130_fd_sc_hd__nor2b_1 + PLACED ( 4140 13600 ) N ;
+    - _06_ sky130_fd_sc_hd__nor2b_1 + PLACED ( 18860 10880 ) FS ;
+    - _07_ sky130_fd_sc_hd__nor2b_1 + PLACED ( 16560 8160 ) N ;
+    - _08_ sky130_fd_sc_hd__nor2b_1 + PLACED ( 18860 8160 ) N ;
+    - _09_ sky130_fd_sc_hd__nor2b_1 + PLACED ( 6440 8160 ) N ;
+    - _10_ sky130_fd_sc_hd__dfxtp_1 + PLACED ( 9200 8160 ) N ;
+    - _11_ sky130_fd_sc_hd__dfxtp_1 + PLACED ( 11500 5440 ) FS ;
+    - _12_ sky130_fd_sc_hd__dfxtp_1 + PLACED ( 11500 10880 ) FS ;
+    - _13_ sky130_fd_sc_hd__dfxtp_1 + PLACED ( 6440 16320 ) FS ;
+    - _14_ sky130_fd_sc_hd__dfxtp_1 + PLACED ( 6440 19040 ) N ;
+    - clkbuf_0_clk sky130_fd_sc_hd__clkbuf_16 + SOURCE TIMING + PLACED ( 9200 13600 ) N ;
+    - clkbuf_1_0__f_clk sky130_fd_sc_hd__clkbuf_16 + SOURCE TIMING + PLACED ( 2300 2720 ) N ;
+    - clkbuf_1_1__f_clk sky130_fd_sc_hd__clkbuf_16 + SOURCE TIMING + PLACED ( 2300 10880 ) FS ;
+END COMPONENTS
+PINS 8 ;
+    - clk + NET clk + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 24150 24687 ) N ;
+    - q[0] + NET q[0] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 10350 242 ) N ;
+    - q[1] + NET q[1] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 24530 8500 ) N ;
+    - q[2] + NET q[2] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 400 15300 ) N ;
+    - q[3] + NET q[3] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 230 242 ) N ;
+    - q[4] + NET q[4] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 3910 24687 ) N ;
+    - rst + NET rst + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 14030 24687 ) N ;
+    - si + NET si + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 20470 242 ) N ;
+END PINS
+NETS 16 ;
+    - _00_ ( _13_ D ) ( _05_ Y ) + USE SIGNAL ;
+    - _01_ ( _12_ D ) ( _06_ Y ) + USE SIGNAL ;
+    - _02_ ( _11_ D ) ( _07_ Y ) + USE SIGNAL ;
+    - _03_ ( _10_ D ) ( _08_ Y ) + USE SIGNAL ;
+    - _04_ ( _14_ D ) ( _09_ Y ) + USE SIGNAL ;
+    - clk ( PIN clk ) ( clkbuf_0_clk A ) + USE CLOCK ;
+    - clknet_0_clk ( clkbuf_1_1__f_clk A ) ( clkbuf_1_0__f_clk A ) ( clkbuf_0_clk X ) + USE CLOCK ;
+    - clknet_1_0__leaf_clk ( _10_ CLK ) ( _11_ CLK ) ( clkbuf_1_0__f_clk X ) + USE CLOCK ;
+    - clknet_1_1__leaf_clk ( _12_ CLK ) ( _13_ CLK ) ( _14_ CLK ) ( clkbuf_1_1__f_clk X ) + USE CLOCK ;
+    - q[0] ( PIN q[0] ) ( _10_ Q ) ( _07_ B_N ) + USE SIGNAL ;
+    - q[1] ( PIN q[1] ) ( _11_ Q ) ( _06_ B_N ) + USE SIGNAL ;
+    - q[2] ( PIN q[2] ) ( _12_ Q ) ( _05_ B_N ) + USE SIGNAL ;
+    - q[3] ( PIN q[3] ) ( _13_ Q ) ( _09_ B_N ) + USE SIGNAL ;
+    - q[4] ( PIN q[4] ) ( _14_ Q ) + USE SIGNAL ;
+    - rst ( PIN rst ) ( _09_ A ) ( _08_ A ) ( _07_ A ) ( _06_ A ) ( _05_ A ) + USE SIGNAL ;
+    - si ( PIN si ) ( _08_ B_N ) + USE SIGNAL ;
+END NETS
+END DESIGN

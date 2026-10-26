@@ -1,0 +1,31 @@
+
+10. Printing statistics.
+
+=== updown_w5 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       28        - wires
+       32        - wire bits
+        5        - public wires
+        9        - public wire bits
+        5        - ports
+        9        - port bits
+       28  253.994 cells
+        3   22.522   sky130_fd_sc_hd__a211oi_1
+        1    5.005   sky130_fd_sc_hd__a21oi_1
+        1    6.256   sky130_fd_sc_hd__and3_1
+        5  100.096   sky130_fd_sc_hd__dfxtp_1
+        1    3.754   sky130_fd_sc_hd__inv_1
+        2   20.019   sky130_fd_sc_hd__maj3_1
+        1    10.01   sky130_fd_sc_hd__mux2i_1
+        2    7.507   sky130_fd_sc_hd__nand2_1
+        4   15.014   sky130_fd_sc_hd__nor2_1
+        1    5.005   sky130_fd_sc_hd__nor3_1
+        1    6.256   sky130_fd_sc_hd__or2_1
+        6    52.55   sky130_fd_sc_hd__xnor2_1
+
+   Chip area for module '\updown_w5': 253.993600
+     of which used for sequential elements: 100.096000 (39.41%)
+

@@ -1,0 +1,69 @@
+{
+   "creator": "Yosys 0.69+ (git sha1 9f09efcdb-dirty, Release, GNU /home/conda/feedstock_root/build_artifacts/bld/rattler-build_yosys_1788957668/build_env/bin/x86_64-conda-linux-gnu-c++ 15.3.0) [github.com/conda-forge/yosys-feedstock at main]",
+   "invocation": "stat -liberty /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -json ",
+   "modules": {
+      "\\updown_w8": {
+         "num_wires":         47,
+         "num_wire_bits":     54,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 12,
+         "num_ports":         5,
+         "num_port_bits":     12,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         50,
+         "num_submodules":       0,
+         "area":              440.422400,
+         "sequential_area":    160.153600,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a211oi_1": 7,
+            "sky130_fd_sc_hd__a21oi_1": 2,
+            "sky130_fd_sc_hd__a31o_1": 1,
+            "sky130_fd_sc_hd__and3_1": 1,
+            "sky130_fd_sc_hd__dfxtp_1": 8,
+            "sky130_fd_sc_hd__inv_1": 2,
+            "sky130_fd_sc_hd__maj3_1": 2,
+            "sky130_fd_sc_hd__nor2_1": 10,
+            "sky130_fd_sc_hd__nor2b_1": 2,
+            "sky130_fd_sc_hd__nor3_1": 1,
+            "sky130_fd_sc_hd__nor4_1": 1,
+            "sky130_fd_sc_hd__o32ai_1": 1,
+            "sky130_fd_sc_hd__xnor2_1": 9,
+            "sky130_fd_sc_hd__xor2_1": 3
+         }
+      }
+   },
+      "design": {
+         "num_wires":         47,
+         "num_wire_bits":     54,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 12,
+         "num_ports":         5,
+         "num_port_bits":     12,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         50,
+         "num_submodules":       0,
+         "area":              440.422400,
+         "sequential_area":    160.153600,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a211oi_1": 7,
+            "sky130_fd_sc_hd__a21oi_1": 2,
+            "sky130_fd_sc_hd__a31o_1": 1,
+            "sky130_fd_sc_hd__and3_1": 1,
+            "sky130_fd_sc_hd__dfxtp_1": 8,
+            "sky130_fd_sc_hd__inv_1": 2,
+            "sky130_fd_sc_hd__maj3_1": 2,
+            "sky130_fd_sc_hd__nor2_1": 10,
+            "sky130_fd_sc_hd__nor2b_1": 2,
+            "sky130_fd_sc_hd__nor3_1": 1,
+            "sky130_fd_sc_hd__nor4_1": 1,
+            "sky130_fd_sc_hd__o32ai_1": 1,
+            "sky130_fd_sc_hd__xnor2_1": 9,
+            "sky130_fd_sc_hd__xor2_1": 3
+         }
+      }
+}
+

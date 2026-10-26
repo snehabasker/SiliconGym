@@ -1,0 +1,28 @@
+{
+ "design_id": "golden__adder_w4",
+ "task_id": "adder_w4",
+ "kind": "golden",
+ "top": "adder_w4",
+ "is_seq": false,
+ "status": "ok",
+ "cells": 13,
+ "area_um2": 97.5936,
+ "cell_types": {
+  "sky130_fd_sc_hd__maj3_1": 2,
+  "sky130_fd_sc_hd__nand2_1": 2,
+  "sky130_fd_sc_hd__nor2_1": 1,
+  "sky130_fd_sc_hd__o21ai_1": 1,
+  "sky130_fd_sc_hd__xnor2_1": 5,
+  "sky130_fd_sc_hd__xor2_1": 2
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 98.0,
+ "worst_slack_ns": 4.07,
+ "data_arrival_ns": 0.93,
+ "period_ns": 5.0,
+ "power_internal_w": 4.74e-06,
+ "power_switching_w": 2.65e-06,
+ "power_leakage_w": 3.03e-11,
+ "power_total_w": 7.39e-06,
+ "seconds": 1.38
+}

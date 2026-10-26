@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__satadd_w4",
+ "task_id": "satadd_w4",
+ "family": "satadd",
+ "split": "test",
+ "kind": "golden",
+ "top": "satadd_w4",
+ "is_seq": false,
+ "clk_port": "clk"
+}

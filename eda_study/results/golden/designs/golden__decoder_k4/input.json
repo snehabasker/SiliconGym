@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__decoder_k4",
+ "task_id": "decoder_k4",
+ "family": "decoder",
+ "split": "train",
+ "kind": "golden",
+ "top": "decoder_k4",
+ "is_seq": false,
+ "clk_port": "clk"
+}

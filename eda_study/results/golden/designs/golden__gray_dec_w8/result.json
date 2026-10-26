@@ -1,0 +1,24 @@
+{
+ "design_id": "golden__gray_dec_w8",
+ "task_id": "gray_dec_w8",
+ "kind": "golden",
+ "top": "gray_dec_w8",
+ "is_seq": false,
+ "status": "ok",
+ "cells": 8,
+ "area_um2": 66.3136,
+ "cell_types": {
+  "sky130_fd_sc_hd__buf_2": 1,
+  "sky130_fd_sc_hd__xor2_1": 7
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 65.0,
+ "worst_slack_ns": 3.68,
+ "data_arrival_ns": 1.321,
+ "period_ns": 5.0,
+ "power_internal_w": 2.65e-06,
+ "power_switching_w": 2.72e-06,
+ "power_leakage_w": 3.11e-11,
+ "power_total_w": 5.37e-06,
+ "seconds": 1.61
+}

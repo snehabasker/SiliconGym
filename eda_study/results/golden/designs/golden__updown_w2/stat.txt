@@ -1,0 +1,25 @@
+
+10. Printing statistics.
+
+=== updown_w2 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       11        - wires
+       12        - wire bits
+        5        - public wires
+        6        - public wire bits
+        5        - ports
+        6        - port bits
+        8   77.574 cells
+        1    5.005   sky130_fd_sc_hd__a21oi_1
+        1    6.256   sky130_fd_sc_hd__and3_1
+        2   40.038   sky130_fd_sc_hd__dfxtp_1
+        1    3.754   sky130_fd_sc_hd__nor2_1
+        1    5.005   sky130_fd_sc_hd__nor3_1
+        2   17.517   sky130_fd_sc_hd__xnor2_1
+
+   Chip area for module '\updown_w2': 77.574400
+     of which used for sequential elements: 40.038400 (51.61%)
+

@@ -1,0 +1,3 @@
+module mux2_w4(input [3:0] d0, input [3:0] d1, input sel, output [3:0] y);
+  assign y = sel ? d1 : d0;
+endmodule

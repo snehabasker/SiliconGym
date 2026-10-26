@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__shiftreg_w6",
+ "task_id": "shiftreg_w6",
+ "family": "shiftreg",
+ "split": "train",
+ "kind": "golden",
+ "top": "shiftreg_w6",
+ "is_seq": true,
+ "clk_port": "clk"
+}

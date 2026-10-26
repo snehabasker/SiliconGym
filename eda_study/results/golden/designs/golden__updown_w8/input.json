@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__updown_w8",
+ "task_id": "updown_w8",
+ "family": "updown",
+ "split": "test",
+ "kind": "golden",
+ "top": "updown_w8",
+ "is_seq": true,
+ "clk_port": "clk"
+}

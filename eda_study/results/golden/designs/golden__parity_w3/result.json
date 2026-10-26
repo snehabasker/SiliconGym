@@ -1,0 +1,23 @@
+{
+ "design_id": "golden__parity_w3",
+ "task_id": "parity_w3",
+ "kind": "golden",
+ "top": "parity_w3",
+ "is_seq": false,
+ "status": "ok",
+ "cells": 2,
+ "area_um2": 17.5168,
+ "cell_types": {
+  "sky130_fd_sc_hd__xnor2_1": 2
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 18.0,
+ "worst_slack_ns": 4.72,
+ "data_arrival_ns": 0.277,
+ "period_ns": 5.0,
+ "power_internal_w": 8.95e-07,
+ "power_switching_w": 3.13e-07,
+ "power_leakage_w": 4.13e-12,
+ "power_total_w": 1.21e-06,
+ "seconds": 1.33
+}

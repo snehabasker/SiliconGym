@@ -1,0 +1,120 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN mux4_w3 ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 24000 24000 ) ;
+ROW ROW_0 unithd 2300 2720 N DO 42 BY 1 STEP 460 0 ;
+ROW ROW_1 unithd 2300 5440 FS DO 42 BY 1 STEP 460 0 ;
+ROW ROW_2 unithd 2300 8160 N DO 42 BY 1 STEP 460 0 ;
+ROW ROW_3 unithd 2300 10880 FS DO 42 BY 1 STEP 460 0 ;
+ROW ROW_4 unithd 2300 13600 N DO 42 BY 1 STEP 460 0 ;
+ROW ROW_5 unithd 2300 16320 FS DO 42 BY 1 STEP 460 0 ;
+ROW ROW_6 unithd 2300 19040 N DO 42 BY 1 STEP 460 0 ;
+TRACKS X 230 DO 52 STEP 460 LAYER li1 ;
+TRACKS Y 170 DO 71 STEP 340 LAYER li1 ;
+TRACKS X 170 DO 71 STEP 340 LAYER met1 ;
+TRACKS Y 170 DO 71 STEP 340 LAYER met1 ;
+TRACKS X 230 DO 52 STEP 460 LAYER met2 ;
+TRACKS Y 230 DO 52 STEP 460 LAYER met2 ;
+TRACKS X 340 DO 35 STEP 680 LAYER met3 ;
+TRACKS Y 340 DO 35 STEP 680 LAYER met3 ;
+TRACKS X 460 DO 26 STEP 920 LAYER met4 ;
+TRACKS Y 460 DO 26 STEP 920 LAYER met4 ;
+TRACKS X 1700 DO 7 STEP 3400 LAYER met5 ;
+TRACKS Y 1700 DO 7 STEP 3400 LAYER met5 ;
+COMPONENTS 3 ;
+    - _0_ sky130_fd_sc_hd__mux4_1 + PLACED ( 7360 8160 ) N ;
+    - _1_ sky130_fd_sc_hd__mux4_1 + PLACED ( 10580 13600 ) N ;
+    - _2_ sky130_fd_sc_hd__mux4_1 + PLACED ( 5060 5440 ) FS ;
+END COMPONENTS
+PINS 17 ;
+    - d0[0] + NET d0[0] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 23600 13940 ) N ;
+    - d0[1] + NET d0[1] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 18630 242 ) N ;
+    - d0[2] + NET d0[2] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 2070 23757 ) N ;
+    - d1[0] + NET d1[0] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 16790 23757 ) N ;
+    - d1[1] + NET d1[1] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 12190 23757 ) N ;
+    - d1[2] + NET d1[2] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 230 242 ) N ;
+    - d2[0] + NET d2[0] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 23600 20740 ) N ;
+    - d2[1] + NET d2[1] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 14030 242 ) N ;
+    - d2[2] + NET d2[2] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 4830 242 ) N ;
+    - d3[0] + NET d3[0] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 23230 242 ) N ;
+    - d3[1] + NET d3[1] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 400 7140 ) N ;
+    - d3[2] + NET d3[2] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 400 13940 ) N ;
+    - sel[0] + NET sel[0] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 21390 23757 ) N ;
+    - sel[1] + NET sel[1] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 9430 242 ) N ;
+    - y[0] + NET y[0] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 400 20740 ) N ;
+    - y[1] + NET y[1] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 6670 23757 ) N ;
+    - y[2] + NET y[2] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 23600 7140 ) N ;
+END PINS
+NETS 17 ;
+    - d0[0] ( PIN d0[0] ) ( _1_ A0 ) + USE SIGNAL ;
+    - d0[1] ( PIN d0[1] ) ( _0_ A0 ) + USE SIGNAL ;
+    - d0[2] ( PIN d0[2] ) ( _2_ A0 ) + USE SIGNAL ;
+    - d1[0] ( PIN d1[0] ) ( _1_ A1 ) + USE SIGNAL ;
+    - d1[1] ( PIN d1[1] ) ( _0_ A1 ) + USE SIGNAL ;
+    - d1[2] ( PIN d1[2] ) ( _2_ A2 ) + USE SIGNAL ;
+    - d2[0] ( PIN d2[0] ) ( _1_ A2 ) + USE SIGNAL ;
+    - d2[1] ( PIN d2[1] ) ( _0_ A2 ) + USE SIGNAL ;
+    - d2[2] ( PIN d2[2] ) ( _2_ A1 ) + USE SIGNAL ;
+    - d3[0] ( PIN d3[0] ) ( _1_ A3 ) + USE SIGNAL ;
+    - d3[1] ( PIN d3[1] ) ( _0_ A3 ) + USE SIGNAL ;
+    - d3[2] ( PIN d3[2] ) ( _2_ A3 ) + USE SIGNAL ;
+    - sel[0] ( PIN sel[0] ) ( _2_ S1 ) ( _1_ S0 ) ( _0_ S0 ) + USE SIGNAL ;
+    - sel[1] ( PIN sel[1] ) ( _2_ S0 ) ( _1_ S1 ) ( _0_ S1 ) + USE SIGNAL ;
+    - y[0] ( PIN y[0] ) ( _1_ X ) + USE SIGNAL ;
+    - y[1] ( PIN y[1] ) ( _0_ X ) + USE SIGNAL ;
+    - y[2] ( PIN y[2] ) ( _2_ X ) + USE SIGNAL ;
+END NETS
+END DESIGN

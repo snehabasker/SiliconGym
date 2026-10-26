@@ -1,0 +1,26 @@
+{
+ "design_id": "golden__edge_both_reg",
+ "task_id": "edge_both_reg",
+ "kind": "golden",
+ "top": "edge_both_reg",
+ "is_seq": true,
+ "status": "ok",
+ "cells": 5,
+ "area_um2": 58.8064,
+ "cell_types": {
+  "sky130_fd_sc_hd__a21oi_1": 1,
+  "sky130_fd_sc_hd__dfxtp_1": 2,
+  "sky130_fd_sc_hd__nor2b_1": 1,
+  "sky130_fd_sc_hd__o21bai_1": 1
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 134.0,
+ "worst_slack_ns": 4.43,
+ "data_arrival_ns": 0.67,
+ "period_ns": 5.0,
+ "power_internal_w": 0.000119,
+ "power_switching_w": 1.52e-05,
+ "power_leakage_w": 6.05e-11,
+ "power_total_w": 0.000135,
+ "seconds": 25.75
+}

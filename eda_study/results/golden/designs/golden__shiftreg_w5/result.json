@@ -1,0 +1,24 @@
+{
+ "design_id": "golden__shiftreg_w5",
+ "task_id": "shiftreg_w5",
+ "kind": "golden",
+ "top": "shiftreg_w5",
+ "is_seq": true,
+ "status": "ok",
+ "cells": 10,
+ "area_um2": 131.376,
+ "cell_types": {
+  "sky130_fd_sc_hd__dfxtp_1": 5,
+  "sky130_fd_sc_hd__nor2b_1": 5
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 206.0,
+ "worst_slack_ns": 4.48,
+ "data_arrival_ns": 0.521,
+ "period_ns": 5.0,
+ "power_internal_w": 0.000145,
+ "power_switching_w": 1.98e-05,
+ "power_leakage_w": 9.01e-11,
+ "power_total_w": 0.000165,
+ "seconds": 25.64
+}

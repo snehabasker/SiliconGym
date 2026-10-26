@@ -1,0 +1,31 @@
+{
+ "design_id": "golden__comparator_w4",
+ "task_id": "comparator_w4",
+ "kind": "golden",
+ "top": "comparator_w4",
+ "is_seq": false,
+ "status": "ok",
+ "cells": 14,
+ "area_um2": 95.0912,
+ "cell_types": {
+  "sky130_fd_sc_hd__a21oi_1": 1,
+  "sky130_fd_sc_hd__and3_1": 1,
+  "sky130_fd_sc_hd__inv_1": 3,
+  "sky130_fd_sc_hd__maj3_1": 1,
+  "sky130_fd_sc_hd__nand2b_1": 2,
+  "sky130_fd_sc_hd__nand4_1": 1,
+  "sky130_fd_sc_hd__nand4b_1": 1,
+  "sky130_fd_sc_hd__o311ai_1": 1,
+  "sky130_fd_sc_hd__xnor2_1": 3
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 95.0,
+ "worst_slack_ns": 4.35,
+ "data_arrival_ns": 0.647,
+ "period_ns": 5.0,
+ "power_internal_w": 3.43e-06,
+ "power_switching_w": 1.71e-06,
+ "power_leakage_w": 3.82e-11,
+ "power_total_w": 5.14e-06,
+ "seconds": 1.38
+}

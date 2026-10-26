@@ -1,0 +1,75 @@
+{
+   "creator": "Yosys 0.69+ (git sha1 9f09efcdb-dirty, Release, GNU /home/conda/feedstock_root/build_artifacts/bld/rattler-build_yosys_1788957668/build_env/bin/x86_64-conda-linux-gnu-c++ 15.3.0) [github.com/conda-forge/yosys-feedstock at main]",
+   "invocation": "stat -liberty /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -json ",
+   "modules": {
+      "\\barrel_shift_w8": {
+         "num_wires":         59,
+         "num_wire_bits":     75,
+         "num_pub_wires":     4,
+         "num_pub_wire_bits": 20,
+         "num_ports":         4,
+         "num_port_bits":     20,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         63,
+         "num_submodules":       0,
+         "area":              409.142400,
+         "sequential_area":    0.000000,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a21oi_1": 7,
+            "sky130_fd_sc_hd__a221oi_1": 1,
+            "sky130_fd_sc_hd__a22oi_1": 5,
+            "sky130_fd_sc_hd__a311oi_1": 2,
+            "sky130_fd_sc_hd__a31oi_1": 3,
+            "sky130_fd_sc_hd__inv_1": 2,
+            "sky130_fd_sc_hd__mux2i_1": 9,
+            "sky130_fd_sc_hd__mux4_2": 1,
+            "sky130_fd_sc_hd__nand2_1": 12,
+            "sky130_fd_sc_hd__nand2b_1": 6,
+            "sky130_fd_sc_hd__nand3_1": 1,
+            "sky130_fd_sc_hd__nor2_1": 3,
+            "sky130_fd_sc_hd__nor2b_1": 2,
+            "sky130_fd_sc_hd__o21ai_1": 3,
+            "sky130_fd_sc_hd__o311ai_1": 1,
+            "sky130_fd_sc_hd__o31ai_1": 4,
+            "sky130_fd_sc_hd__or2_1": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         59,
+         "num_wire_bits":     75,
+         "num_pub_wires":     4,
+         "num_pub_wire_bits": 20,
+         "num_ports":         4,
+         "num_port_bits":     20,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         63,
+         "num_submodules":       0,
+         "area":              409.142400,
+         "sequential_area":    0.000000,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a21oi_1": 7,
+            "sky130_fd_sc_hd__a221oi_1": 1,
+            "sky130_fd_sc_hd__a22oi_1": 5,
+            "sky130_fd_sc_hd__a311oi_1": 2,
+            "sky130_fd_sc_hd__a31oi_1": 3,
+            "sky130_fd_sc_hd__inv_1": 2,
+            "sky130_fd_sc_hd__mux2i_1": 9,
+            "sky130_fd_sc_hd__mux4_2": 1,
+            "sky130_fd_sc_hd__nand2_1": 12,
+            "sky130_fd_sc_hd__nand2b_1": 6,
+            "sky130_fd_sc_hd__nand3_1": 1,
+            "sky130_fd_sc_hd__nor2_1": 3,
+            "sky130_fd_sc_hd__nor2b_1": 2,
+            "sky130_fd_sc_hd__o21ai_1": 3,
+            "sky130_fd_sc_hd__o311ai_1": 1,
+            "sky130_fd_sc_hd__o31ai_1": 4,
+            "sky130_fd_sc_hd__or2_1": 1
+         }
+      }
+}
+

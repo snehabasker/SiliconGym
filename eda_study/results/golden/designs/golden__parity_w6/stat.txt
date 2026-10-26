@@ -1,0 +1,21 @@
+
+10. Printing statistics.
+
+=== parity_w6 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+        6        - wires
+       11        - wire bits
+        2        - public wires
+        7        - public wire bits
+        2        - ports
+        7        - port bits
+        5   43.792 cells
+        2   17.517   sky130_fd_sc_hd__xnor2_1
+        3   26.275   sky130_fd_sc_hd__xor2_1
+
+   Chip area for module '\parity_w6': 43.792000
+     of which used for sequential elements: 0.000000 (0.00%)
+

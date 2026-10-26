@@ -1,0 +1,27 @@
+
+10. Printing statistics.
+
+=== decoder_k4 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       12        - wires
+       30        - wire bits
+        3        - public wires
+       21        - public wire bits
+        3        - ports
+       21        - port bits
+       25  127.622 cells
+        2    7.507   sky130_fd_sc_hd__nand2_1
+        1    6.256   sky130_fd_sc_hd__nand2b_1
+        1    5.005   sky130_fd_sc_hd__nand3_1
+        2   15.014   sky130_fd_sc_hd__nand3b_1
+       12   45.043   sky130_fd_sc_hd__nor2_1
+        2    10.01   sky130_fd_sc_hd__nor3_1
+        2   12.512   sky130_fd_sc_hd__nor4_1
+        3   26.275   sky130_fd_sc_hd__or3b_1
+
+   Chip area for module '\decoder_k4': 127.622400
+     of which used for sequential elements: 0.000000 (0.00%)
+

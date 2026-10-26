@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__barrel_shift_w8",
+ "task_id": "barrel_shift_w8",
+ "family": "barrel",
+ "split": "test",
+ "kind": "golden",
+ "top": "barrel_shift_w8",
+ "is_seq": false,
+ "clk_port": "clk"
+}

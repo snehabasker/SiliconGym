@@ -1,0 +1,26 @@
+{
+ "design_id": "golden__prienc_n4",
+ "task_id": "prienc_n4",
+ "kind": "golden",
+ "top": "prienc_n4",
+ "is_seq": false,
+ "status": "ok",
+ "cells": 4,
+ "area_um2": 23.7728,
+ "cell_types": {
+  "sky130_fd_sc_hd__a21o_1": 1,
+  "sky130_fd_sc_hd__inv_1": 1,
+  "sky130_fd_sc_hd__or2_1": 1,
+  "sky130_fd_sc_hd__or3_1": 1
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 24.0,
+ "worst_slack_ns": 4.52,
+ "data_arrival_ns": 0.485,
+ "period_ns": 5.0,
+ "power_internal_w": 6.37e-07,
+ "power_switching_w": 2.28e-07,
+ "power_leakage_w": 1.38e-11,
+ "power_total_w": 8.65e-07,
+ "seconds": 1.63
+}

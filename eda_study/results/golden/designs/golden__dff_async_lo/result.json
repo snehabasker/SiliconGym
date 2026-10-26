@@ -1,0 +1,23 @@
+{
+ "design_id": "golden__dff_async_lo",
+ "task_id": "dff_async_lo",
+ "kind": "golden",
+ "top": "dff_async_lo",
+ "is_seq": true,
+ "status": "ok",
+ "cells": 4,
+ "area_um2": 100.096,
+ "cell_types": {
+  "sky130_fd_sc_hd__dfrtp_1": 4
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 175.0,
+ "worst_slack_ns": 4.44,
+ "data_arrival_ns": 0.0,
+ "period_ns": 5.0,
+ "power_internal_w": 0.000136,
+ "power_switching_w": 1.83e-05,
+ "power_leakage_w": 7.19e-11,
+ "power_total_w": 0.000154,
+ "seconds": 26.45
+}

@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__comparator_w5",
+ "task_id": "comparator_w5",
+ "family": "comparator",
+ "split": "train",
+ "kind": "golden",
+ "top": "comparator_w5",
+ "is_seq": false,
+ "clk_port": "clk"
+}

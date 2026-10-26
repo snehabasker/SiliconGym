@@ -1,0 +1,51 @@
+{
+   "creator": "Yosys 0.69+ (git sha1 9f09efcdb-dirty, Release, GNU /home/conda/feedstock_root/build_artifacts/bld/rattler-build_yosys_1788957668/build_env/bin/x86_64-conda-linux-gnu-c++ 15.3.0) [github.com/conda-forge/yosys-feedstock at main]",
+   "invocation": "stat -liberty /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -json ",
+   "modules": {
+      "\\adder_w2": {
+         "num_wires":         7,
+         "num_wire_bits":     11,
+         "num_pub_wires":     3,
+         "num_pub_wire_bits": 7,
+         "num_ports":         3,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         7,
+         "num_submodules":       0,
+         "area":              42.540800,
+         "sequential_area":    0.000000,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__nand2_1": 2,
+            "sky130_fd_sc_hd__nor2_1": 1,
+            "sky130_fd_sc_hd__o21ai_1": 1,
+            "sky130_fd_sc_hd__xnor2_1": 1,
+            "sky130_fd_sc_hd__xor2_1": 2
+         }
+      }
+   },
+      "design": {
+         "num_wires":         7,
+         "num_wire_bits":     11,
+         "num_pub_wires":     3,
+         "num_pub_wire_bits": 7,
+         "num_ports":         3,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         7,
+         "num_submodules":       0,
+         "area":              42.540800,
+         "sequential_area":    0.000000,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__nand2_1": 2,
+            "sky130_fd_sc_hd__nor2_1": 1,
+            "sky130_fd_sc_hd__o21ai_1": 1,
+            "sky130_fd_sc_hd__xnor2_1": 1,
+            "sky130_fd_sc_hd__xor2_1": 2
+         }
+      }
+}
+

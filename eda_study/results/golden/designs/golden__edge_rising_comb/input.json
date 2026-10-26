@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__edge_rising_comb",
+ "task_id": "edge_rising_comb",
+ "family": "edge",
+ "split": "val",
+ "kind": "golden",
+ "top": "edge_rising_comb",
+ "is_seq": true,
+ "clk_port": "clk"
+}

@@ -1,0 +1,25 @@
+{
+ "design_id": "golden__edge_falling_reg",
+ "task_id": "edge_falling_reg",
+ "kind": "golden",
+ "top": "edge_falling_reg",
+ "is_seq": true,
+ "status": "ok",
+ "cells": 4,
+ "area_um2": 53.8016,
+ "cell_types": {
+  "sky130_fd_sc_hd__dfxtp_1": 2,
+  "sky130_fd_sc_hd__nor2b_1": 1,
+  "sky130_fd_sc_hd__nor3b_1": 1
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 129.0,
+ "worst_slack_ns": 4.46,
+ "data_arrival_ns": 0.667,
+ "period_ns": 5.0,
+ "power_internal_w": 0.000119,
+ "power_switching_w": 1.48e-05,
+ "power_leakage_w": 5.73e-11,
+ "power_total_w": 0.000133,
+ "seconds": 25.52
+}

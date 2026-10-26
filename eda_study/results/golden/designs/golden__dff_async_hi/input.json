@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__dff_async_hi",
+ "task_id": "dff_async_hi",
+ "family": "dff",
+ "split": "train",
+ "kind": "golden",
+ "top": "dff_async_hi",
+ "is_seq": true,
+ "clk_port": "clk"
+}

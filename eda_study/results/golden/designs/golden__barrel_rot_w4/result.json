@@ -1,0 +1,24 @@
+{
+ "design_id": "golden__barrel_rot_w4",
+ "task_id": "barrel_rot_w4",
+ "kind": "golden",
+ "top": "barrel_rot_w4",
+ "is_seq": false,
+ "status": "ok",
+ "cells": 12,
+ "area_um2": 225.216,
+ "cell_types": {
+  "sky130_fd_sc_hd__mux2_1": 4,
+  "sky130_fd_sc_hd__mux4_2": 8
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 255.0,
+ "worst_slack_ns": 4.2,
+ "data_arrival_ns": 0.798,
+ "period_ns": 5.0,
+ "power_internal_w": 1.13e-05,
+ "power_switching_w": 1.52e-06,
+ "power_leakage_w": 1e-10,
+ "power_total_w": 1.29e-05,
+ "seconds": 1.17
+}

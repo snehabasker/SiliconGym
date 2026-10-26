@@ -1,0 +1,82 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN updown_w2 ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 24000 24000 ) ;
+ROW ROW_0 unithd 2300 2720 N DO 42 BY 1 STEP 460 0 ;
+ROW ROW_1 unithd 2300 5440 FS DO 42 BY 1 STEP 460 0 ;
+ROW ROW_2 unithd 2300 8160 N DO 42 BY 1 STEP 460 0 ;
+ROW ROW_3 unithd 2300 10880 FS DO 42 BY 1 STEP 460 0 ;
+ROW ROW_4 unithd 2300 13600 N DO 42 BY 1 STEP 460 0 ;
+ROW ROW_5 unithd 2300 16320 FS DO 42 BY 1 STEP 460 0 ;
+ROW ROW_6 unithd 2300 19040 N DO 42 BY 1 STEP 460 0 ;
+TRACKS X 230 DO 52 STEP 460 LAYER li1 ;
+TRACKS Y 170 DO 71 STEP 340 LAYER li1 ;
+TRACKS X 170 DO 71 STEP 340 LAYER met1 ;
+TRACKS Y 170 DO 71 STEP 340 LAYER met1 ;
+TRACKS X 230 DO 52 STEP 460 LAYER met2 ;
+TRACKS Y 230 DO 52 STEP 460 LAYER met2 ;
+TRACKS X 340 DO 35 STEP 680 LAYER met3 ;
+TRACKS Y 340 DO 35 STEP 680 LAYER met3 ;
+TRACKS X 460 DO 26 STEP 920 LAYER met4 ;
+TRACKS Y 460 DO 26 STEP 920 LAYER met4 ;
+TRACKS X 1700 DO 7 STEP 3400 LAYER met5 ;
+TRACKS Y 1700 DO 7 STEP 3400 LAYER met5 ;
+COMPONENTS 11 ;
+    - _06_ sky130_fd_sc_hd__xnor2_1 + PLACED ( 13340 16320 ) FS ;
+    - _07_ sky130_fd_sc_hd__nor2_1 + PLACED ( 16560 16320 ) FS ;
+    - _08_ sky130_fd_sc_hd__xnor2_1 + PLACED ( 12420 5440 ) FS ;
+    - _09_ sky130_fd_sc_hd__and3_1 + PLACED ( 11040 10880 ) FS ;
+    - _10_ sky130_fd_sc_hd__a21oi_1 + PLACED ( 13340 10880 ) FS ;
+    - _11_ sky130_fd_sc_hd__nor3_1 + PLACED ( 11500 13600 ) N ;
+    - _12_ sky130_fd_sc_hd__dfxtp_1 + PLACED ( 5520 19040 ) N ;
+    - _13_ sky130_fd_sc_hd__dfxtp_1 + PLACED ( 2300 10880 ) FS ;
+    - clkbuf_0_clk sky130_fd_sc_hd__clkbuf_16 + SOURCE TIMING + PLACED ( 4140 16320 ) FS ;
+    - clkbuf_1_0__f_clk sky130_fd_sc_hd__clkbuf_16 + SOURCE TIMING + PLACED ( 2300 2720 ) N ;
+    - clkbuf_1_1__f_clk sky130_fd_sc_hd__clkbuf_16 + SOURCE TIMING + PLACED ( 2300 13600 ) N ;
+END COMPONENTS
+PINS 6 ;
+    - clk + NET clk + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 400 19380 ) N ;
+    - count[0] + NET count[0] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 13110 242 ) N ;
+    - count[1] + NET count[1] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 230 242 ) N ;
+    - en + NET en + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 10350 23757 ) N ;
+    - rst + NET rst + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 23230 23757 ) N ;
+    - up + NET up + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 23600 4420 ) N ;
+END PINS
+NETS 15 ;
+    - _00_ ( _12_ D ) ( _07_ Y ) + USE SIGNAL ;
+    - _01_ ( _13_ D ) ( _11_ Y ) + USE SIGNAL ;
+    - _02_ ( _10_ A2 ) ( _09_ C ) ( _08_ Y ) + USE SIGNAL ;
+    - _03_ ( _11_ B ) ( _09_ X ) + USE SIGNAL ;
+    - _04_ ( _11_ C ) ( _10_ Y ) + USE SIGNAL ;
+    - _05_ ( _07_ B ) ( _06_ Y ) + USE SIGNAL ;
+    - clk ( PIN clk ) ( clkbuf_0_clk A ) + USE CLOCK ;
+    - clknet_0_clk ( clkbuf_1_1__f_clk A ) ( clkbuf_1_0__f_clk A ) ( clkbuf_0_clk X ) + USE CLOCK ;
+    - clknet_1_0__leaf_clk ( _13_ CLK ) ( clkbuf_1_0__f_clk X ) + USE CLOCK ;
+    - clknet_1_1__leaf_clk ( _12_ CLK ) ( clkbuf_1_1__f_clk X ) + USE CLOCK ;
+    - count[0] ( PIN count[0] ) ( _12_ Q ) ( _08_ A ) ( _06_ B ) + USE SIGNAL ;
+    - count[1] ( PIN count[1] ) ( _13_ Q ) ( _10_ B1 ) ( _09_ A ) + USE SIGNAL ;
+    - en ( PIN en ) ( _10_ A1 ) ( _09_ B ) ( _06_ A ) + USE SIGNAL ;
+    - rst ( PIN rst ) ( _11_ A ) ( _07_ A ) + USE SIGNAL ;
+    - up ( PIN up ) ( _08_ B ) + USE SIGNAL ;
+END NETS
+END DESIGN

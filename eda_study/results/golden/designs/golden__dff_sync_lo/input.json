@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__dff_sync_lo",
+ "task_id": "dff_sync_lo",
+ "family": "dff",
+ "split": "train",
+ "kind": "golden",
+ "top": "dff_sync_lo",
+ "is_seq": true,
+ "clk_port": "clk"
+}

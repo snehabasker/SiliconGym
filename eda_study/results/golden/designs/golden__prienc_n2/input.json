@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__prienc_n2",
+ "task_id": "prienc_n2",
+ "family": "prienc",
+ "split": "train",
+ "kind": "golden",
+ "top": "prienc_n2",
+ "is_seq": false,
+ "clk_port": "clk"
+}

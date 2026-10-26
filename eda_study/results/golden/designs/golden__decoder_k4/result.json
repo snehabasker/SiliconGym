@@ -1,0 +1,30 @@
+{
+ "design_id": "golden__decoder_k4",
+ "task_id": "decoder_k4",
+ "kind": "golden",
+ "top": "decoder_k4",
+ "is_seq": false,
+ "status": "ok",
+ "cells": 25,
+ "area_um2": 127.6224,
+ "cell_types": {
+  "sky130_fd_sc_hd__nand2_1": 2,
+  "sky130_fd_sc_hd__nand2b_1": 1,
+  "sky130_fd_sc_hd__nand3_1": 1,
+  "sky130_fd_sc_hd__nand3b_1": 2,
+  "sky130_fd_sc_hd__nor2_1": 12,
+  "sky130_fd_sc_hd__nor3_1": 2,
+  "sky130_fd_sc_hd__nor4_1": 2,
+  "sky130_fd_sc_hd__or3b_1": 3
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 133.0,
+ "worst_slack_ns": 4.53,
+ "data_arrival_ns": 0.466,
+ "period_ns": 5.0,
+ "power_internal_w": 2.53e-06,
+ "power_switching_w": 2.64e-06,
+ "power_leakage_w": 4.52e-11,
+ "power_total_w": 5.17e-06,
+ "seconds": 1.27
+}

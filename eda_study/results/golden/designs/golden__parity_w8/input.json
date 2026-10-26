@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__parity_w8",
+ "task_id": "parity_w8",
+ "family": "parity",
+ "split": "train",
+ "kind": "golden",
+ "top": "parity_w8",
+ "is_seq": false,
+ "clk_port": "clk"
+}

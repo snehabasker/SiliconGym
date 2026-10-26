@@ -1,0 +1,23 @@
+{
+ "design_id": "golden__mux2_w2",
+ "task_id": "mux2_w2",
+ "kind": "golden",
+ "top": "mux2_w2",
+ "is_seq": false,
+ "status": "ok",
+ "cells": 2,
+ "area_um2": 22.5216,
+ "cell_types": {
+  "sky130_fd_sc_hd__mux2_1": 2
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 23.0,
+ "worst_slack_ns": 4.72,
+ "data_arrival_ns": 0.279,
+ "period_ns": 5.0,
+ "power_internal_w": 8.03e-07,
+ "power_switching_w": 1.26e-07,
+ "power_leakage_w": 8.06e-12,
+ "power_total_w": 9.29e-07,
+ "seconds": 1.38
+}

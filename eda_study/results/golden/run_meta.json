@@ -1,0 +1,26 @@
+{
+ "argv": [
+  "eda_run.py",
+  "--manifest",
+  "manifests/golden.jsonl",
+  "--out",
+  "results/golden",
+  "--jobs",
+  "2"
+ ],
+ "period_ns": 5.0,
+ "pnr": true,
+ "n_designs": 96,
+ "tools": {
+  "yosys": "/home/sneha_basker/eda/mamba/envs/eda/bin/yosys",
+  "openroad": "/home/sneha_basker/eda/mamba/envs/orlh/bin/openroad",
+  "lib": "/home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib",
+  "tlef": "/home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef",
+  "lef": "/home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef"
+ },
+ "versions": {
+  "yosys": "Yosys 0.69+ (git sha1 9f09efcdb-dirty, Release, GNU /home/conda/feedstock_root/build_artifacts/bld/rattler-build_yosys_1788957668/build_env/bin/x86_64-conda-linux-gnu-c++ 15.3.0) [github.com/conda-forge/yosys-feedstock at main]",
+  "openroad": "f12e2f474102bfb875eeee57fb610d7d7de17770"
+ },
+ "pdk": "/home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A"
+}

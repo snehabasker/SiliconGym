@@ -1,0 +1,23 @@
+
+10. Printing statistics.
+
+=== edge_both_reg ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+        8        - wires
+        8        - wire bits
+        5        - public wires
+        5        - public wire bits
+        4        - ports
+        4        - port bits
+        5   58.806 cells
+        1    5.005   sky130_fd_sc_hd__a21oi_1
+        2   40.038   sky130_fd_sc_hd__dfxtp_1
+        1    6.256   sky130_fd_sc_hd__nor2b_1
+        1    7.507   sky130_fd_sc_hd__o21bai_1
+
+   Chip area for module '\edge_both_reg': 58.806400
+     of which used for sequential elements: 40.038400 (68.09%)
+

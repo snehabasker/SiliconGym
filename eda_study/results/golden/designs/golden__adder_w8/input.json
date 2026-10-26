@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__adder_w8",
+ "task_id": "adder_w8",
+ "family": "adder",
+ "split": "train",
+ "kind": "golden",
+ "top": "adder_w8",
+ "is_seq": false,
+ "clk_port": "clk"
+}

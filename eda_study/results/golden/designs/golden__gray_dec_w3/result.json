@@ -1,0 +1,24 @@
+{
+ "design_id": "golden__gray_dec_w3",
+ "task_id": "gray_dec_w3",
+ "kind": "golden",
+ "top": "gray_dec_w3",
+ "is_seq": false,
+ "status": "ok",
+ "cells": 3,
+ "area_um2": 22.5216,
+ "cell_types": {
+  "sky130_fd_sc_hd__buf_2": 1,
+  "sky130_fd_sc_hd__xor2_1": 2
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 21.0,
+ "worst_slack_ns": 4.69,
+ "data_arrival_ns": 0.307,
+ "period_ns": 5.0,
+ "power_internal_w": 7.16e-07,
+ "power_switching_w": 4.19e-07,
+ "power_leakage_w": 9.74e-12,
+ "power_total_w": 1.14e-06,
+ "seconds": 1.68
+}

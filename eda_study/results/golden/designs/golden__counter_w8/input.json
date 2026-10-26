@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__counter_w8",
+ "task_id": "counter_w8",
+ "family": "counter",
+ "split": "train",
+ "kind": "golden",
+ "top": "counter_w8",
+ "is_seq": true,
+ "clk_port": "clk"
+}

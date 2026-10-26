@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__gray_enc_w3",
+ "task_id": "gray_enc_w3",
+ "family": "gray",
+ "split": "val",
+ "kind": "golden",
+ "top": "gray_enc_w3",
+ "is_seq": false,
+ "clk_port": "clk"
+}

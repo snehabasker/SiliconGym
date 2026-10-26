@@ -1,0 +1,126 @@
+$ /home/sneha_basker/eda/mamba/envs/orlh/bin/openroad -no_init -exit pnr.tcl
+OpenROAD f12e2f474102bfb875eeee57fb610d7d7de17770 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+[INFO ODB-0223]     Created 14 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0226] Finished LEF file:  /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+[INFO ODB-0222] Reading LEF file: /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0225]     Created 437 library cells
+[INFO ODB-0226] Finished LEF file:  /home/sneha_basker/eda/mamba/envs/pdk/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.300, 2.720).
+[INFO IFP-0001] Added 7 rows of 42 sites.
+Found 0 macro blocks.
+Using 1u default distance from corners.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0007] Random pin placement.
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 2300 2720
+[INFO GPL-0005] CoreAreaUxUy: 21620 21760
+[INFO GPL-0006] NumInstances: 8
+[INFO GPL-0007] NumPlaceInstances: 8
+[INFO GPL-0008] NumFixedInstances: 0
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 16
+[INFO GPL-0011] NumPins: 39
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 24000 24000
+[INFO GPL-0014] CoreAreaLxLy: 2300 2720
+[INFO GPL-0015] CoreAreaUxUy: 21620 21760
+[INFO GPL-0016] CoreArea: 367852800
+[INFO GPL-0017] NonPlaceInstsArea: 0
+[INFO GPL-0018] PlaceInstsArea: 66313600
+[INFO GPL-0019] Util(%): 18.03
+[INFO GPL-0020] StdInstsArea: 66313600
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG residual: 0.00000000 HPWL: 409510
+[InitialPlace]  Iter: 2 CG residual: 0.00000000 HPWL: 325540
+[InitialPlace]  Iter: 3 CG residual: 0.00000008 HPWL: 317913
+[InitialPlace]  Iter: 4 CG residual: 0.00000000 HPWL: 314476
+[InitialPlace]  Iter: 5 CG residual: 0.00000001 HPWL: 312715
+[INFO GPL-0031] FillerInit: NumGCells: 22
+[INFO GPL-0032] FillerInit: NumGNets: 16
+[INFO GPL-0033] FillerInit: NumGPins: 39
+[INFO GPL-0023] TargetDensity: 0.50
+[INFO GPL-0024] AveragePlaceInstArea: 8289200
+[INFO GPL-0025] IdealBinArea: 16578400
+[INFO GPL-0026] IdealBinCnt: 22
+[INFO GPL-0027] TotalBinArea: 367852800
+[INFO GPL-0028] BinCnt: 4 4
+[INFO GPL-0029] BinSize: 4830 4760
+[INFO GPL-0030] NumBins: 16
+[NesterovSolve] Iter: 1 overflow: 0.0712678 HPWL: 255932
+[NesterovSolve] Finished with Overflow: 0.071268
+[INFO RSZ-0058] Using max wire length 3176um.
+[INFO RSZ-0039] Resized 1 instances.
+[WARNING DPL-0011] Could not find power special net.
+Placement Analysis
+---------------------------------
+total displacement         15.5 u
+average displacement        1.9 u
+max displacement            2.9 u
+original HPWL             253.6 u
+legalized HPWL            257.5 u
+delta HPWL                    2 %
+
+=== REPORT_START
+--- design_area
+Design area 65 u^2 18% utilization.
+--- cell_type_report
+--- worst_slack_max
+worst slack 3.68
+--- worst_slack_min
+worst slack 0.03
+--- tns
+tns 0.00
+--- critical_path
+Startpoint: g[7] (input port clocked by vclk)
+Endpoint: b[0] (output port clocked by vclk)
+Path Group: vclk
+Path Type: max
+
+     Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------
+            0.000    0.000    0.000   clock vclk (rise edge)
+                     0.000    0.000   clock network delay (ideal)
+                     0.000    0.000 v input external delay
+   0.008    0.000    0.000    0.000 v g[7] (in)
+   0.006    0.169    0.163    0.163 ^ _4_/X (sky130_fd_sc_hd__xor2_1)
+   0.006    0.173    0.201    0.364 ^ _5_/X (sky130_fd_sc_hd__xor2_1)
+   0.006    0.176    0.204    0.568 ^ _6_/X (sky130_fd_sc_hd__xor2_1)
+   0.006    0.179    0.206    0.774 ^ _0_/X (sky130_fd_sc_hd__xor2_1)
+   0.006    0.167    0.198    0.972 ^ _1_/X (sky130_fd_sc_hd__xor2_1)
+   0.007    0.191    0.214    1.186 ^ _2_/X (sky130_fd_sc_hd__xor2_1)
+   0.001    0.079    0.135    1.321 ^ _3_/X (sky130_fd_sc_hd__xor2_1)
+            0.079    0.000    1.321 ^ b[0] (out)
+                              1.321   data arrival time
+
+            0.000    5.000    5.000   clock vclk (rise edge)
+                     0.000    5.000   clock network delay (ideal)
+                     0.000    5.000   clock reconvergence pessimism
+                     0.000    5.000   output external delay
+                              5.000   data required time
+---------------------------------------------------------------------------
+                              5.000   data required time
+                             -1.321   data arrival time
+---------------------------------------------------------------------------
+                              3.679   slack (MET)
+
+
+--- power
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          2.65e-06   2.72e-06   3.11e-11   5.37e-06 100.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  2.65e-06   2.72e-06   3.11e-11   5.37e-06 100.0%
+                          49.4%      50.6%       0.0%
+=== REPORT_END

@@ -1,0 +1,20 @@
+
+10. Printing statistics.
+
+=== mux2_w5 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+        4        - wires
+       16        - wire bits
+        4        - public wires
+       16        - public wire bits
+        4        - ports
+       16        - port bits
+        5   56.304 cells
+        5   56.304   sky130_fd_sc_hd__mux2_1
+
+   Chip area for module '\mux2_w5': 56.304000
+     of which used for sequential elements: 0.000000 (0.00%)
+

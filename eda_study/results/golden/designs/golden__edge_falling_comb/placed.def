@@ -1,0 +1,57 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN edge_falling_comb ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 24000 24000 ) ;
+ROW ROW_0 unithd 2300 2720 N DO 42 BY 1 STEP 460 0 ;
+ROW ROW_1 unithd 2300 5440 FS DO 42 BY 1 STEP 460 0 ;
+ROW ROW_2 unithd 2300 8160 N DO 42 BY 1 STEP 460 0 ;
+ROW ROW_3 unithd 2300 10880 FS DO 42 BY 1 STEP 460 0 ;
+ROW ROW_4 unithd 2300 13600 N DO 42 BY 1 STEP 460 0 ;
+ROW ROW_5 unithd 2300 16320 FS DO 42 BY 1 STEP 460 0 ;
+ROW ROW_6 unithd 2300 19040 N DO 42 BY 1 STEP 460 0 ;
+TRACKS X 230 DO 52 STEP 460 LAYER li1 ;
+TRACKS Y 170 DO 71 STEP 340 LAYER li1 ;
+TRACKS X 170 DO 71 STEP 340 LAYER met1 ;
+TRACKS Y 170 DO 71 STEP 340 LAYER met1 ;
+TRACKS X 230 DO 52 STEP 460 LAYER met2 ;
+TRACKS Y 230 DO 52 STEP 460 LAYER met2 ;
+TRACKS X 340 DO 35 STEP 680 LAYER met3 ;
+TRACKS Y 340 DO 35 STEP 680 LAYER met3 ;
+TRACKS X 460 DO 26 STEP 920 LAYER met4 ;
+TRACKS Y 460 DO 26 STEP 920 LAYER met4 ;
+TRACKS X 1700 DO 7 STEP 3400 LAYER met5 ;
+TRACKS Y 1700 DO 7 STEP 3400 LAYER met5 ;
+COMPONENTS 3 ;
+    - _1_ sky130_fd_sc_hd__nor2b_1 + PLACED ( 11960 10880 ) FS ;
+    - _2_ sky130_fd_sc_hd__nor2b_1 + PLACED ( 14260 10880 ) FS ;
+    - _3_ sky130_fd_sc_hd__dfxtp_1 + PLACED ( 4600 10880 ) FS ;
+END COMPONENTS
+PINS 4 ;
+    - clk + NET clk + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 230 242 ) N ;
+    - pulse + NET pulse + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 2990 23757 ) N ;
+    - rst + NET rst + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 23230 23757 ) N ;
+    - sig + NET sig + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 20470 242 ) N ;
+END PINS
+NETS 6 ;
+    - _0_ ( _3_ D ) ( _2_ Y ) + USE SIGNAL ;
+    - clk ( PIN clk ) ( _3_ CLK ) + USE SIGNAL ;
+    - prev ( _3_ Q ) ( _1_ B_N ) + USE SIGNAL ;
+    - pulse ( PIN pulse ) ( _1_ Y ) + USE SIGNAL ;
+    - rst ( PIN rst ) ( _2_ A ) + USE SIGNAL ;
+    - sig ( PIN sig ) ( _2_ B_N ) ( _1_ A ) + USE SIGNAL ;
+END NETS
+END DESIGN

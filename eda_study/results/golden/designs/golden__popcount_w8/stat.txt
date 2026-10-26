@@ -1,0 +1,29 @@
+
+10. Printing statistics.
+
+=== popcount_w8 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       19        - wires
+       29        - wire bits
+        2        - public wires
+       12        - public wire bits
+        2        - ports
+       12        - port bits
+       21    156.4 cells
+        1    3.754   sky130_fd_sc_hd__inv_1
+        3   30.029   sky130_fd_sc_hd__maj3_1
+        3   11.261   sky130_fd_sc_hd__nand2_1
+        1    3.754   sky130_fd_sc_hd__nor2_1
+        1    5.005   sky130_fd_sc_hd__nor3_1
+        1    6.256   sky130_fd_sc_hd__nor4_1
+        1    7.507   sky130_fd_sc_hd__o21a_1
+        1    10.01   sky130_fd_sc_hd__o21ba_1
+        7   61.309   sky130_fd_sc_hd__xnor2_1
+        2   17.517   sky130_fd_sc_hd__xor2_1
+
+   Chip area for module '\popcount_w8': 156.400000
+     of which used for sequential elements: 0.000000 (0.00%)
+

@@ -1,0 +1,24 @@
+{
+ "design_id": "golden__decoder_k1",
+ "task_id": "decoder_k1",
+ "kind": "golden",
+ "top": "decoder_k1",
+ "is_seq": false,
+ "status": "ok",
+ "cells": 2,
+ "area_um2": 12.512,
+ "cell_types": {
+  "sky130_fd_sc_hd__and2_1": 1,
+  "sky130_fd_sc_hd__nor2b_1": 1
+ },
+ "pnr_status": "ok",
+ "place_area_um2": 13.0,
+ "worst_slack_ns": 4.88,
+ "data_arrival_ns": 0.117,
+ "period_ns": 5.0,
+ "power_internal_w": 3.78e-07,
+ "power_switching_w": 9.85e-08,
+ "power_leakage_w": 4.1e-12,
+ "power_total_w": 4.76e-07,
+ "seconds": 1.38
+}

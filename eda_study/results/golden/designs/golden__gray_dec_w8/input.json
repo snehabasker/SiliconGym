@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__gray_dec_w8",
+ "task_id": "gray_dec_w8",
+ "family": "gray",
+ "split": "val",
+ "kind": "golden",
+ "top": "gray_dec_w8",
+ "is_seq": false,
+ "clk_port": "clk"
+}

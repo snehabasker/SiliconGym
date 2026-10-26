@@ -1,0 +1,10 @@
+{
+ "design_id": "golden__barrel_rot_w16",
+ "task_id": "barrel_rot_w16",
+ "family": "barrel",
+ "split": "test",
+ "kind": "golden",
+ "top": "barrel_rot_w16",
+ "is_seq": false,
+ "clk_port": "clk"
+}
