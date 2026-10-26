@@ -144,6 +144,12 @@ then the per-device batch (keep it a multiple of `num_generations`) and raise gr
 list the DAPT/SFT/DPO adapter ids in `model.init_adapters` (or `--init-adapters`); without them everything runs on plain
 Qwen2.5-Coder-1.5B. Unsloth is not used: TRL + HF generate was chosen for transparency and testability.
 
+## Additional study: open-source EDA (in progress)
+
+[`eda_study/`](eda_study/) runs the golden designs through Yosys and an OpenROAD placement flow on sky130 (not OpenLane;
+see its README for limitations). Done so far: all 96 golden designs synthesised and placed, raw results committed.
+Not done yet: the comparison with model-generated designs and any area-aware reward experiment.
+
 ## Layout
 
 `envs/` base, verilog, python · `tools/` compile, simulate, lint, sandbox · `rewards/` verifiable, learned_rm, ai_judge,
